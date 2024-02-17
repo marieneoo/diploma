@@ -1,0 +1,29 @@
+.about_know_more {
+    height: 70vh;
+    width: 100%;
+    background-color: #F9C349;
+    display: flex;
+    justify-content: center;
+}
+
+.about_know_more_txt {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.about_know_more_txt h6, .about_know_more_txt h1{ 
+    color: white;
+}
+
+.about_know_more_txt h6 {
+    font-family: 'Inter',sans-serif;
+    font-size: calc(0.5rem + 1vw);
+}
+
+.about_know_more_txt h1 {
+    font-family: 'Merriweather';
+    font-size: calc(2rem + 3vw);
+}

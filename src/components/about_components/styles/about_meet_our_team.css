@@ -1,0 +1,51 @@
+.about_meet_our_team {
+    height: 130vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-columns: 1fr;
+}
+
+.about_meet_our_team_top {
+
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about_meet_our_team_top h2 {
+    font-family: 'Merriweather';
+    font-size: 40px;
+}
+
+.about_meet_our_team_top p {
+    font-family: 'Inter',sans-serif;
+    line-height: 25px;
+    color: #62615c;
+    width: 67%;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.about_meet_our_team_teachers {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    align-self: center;
+}
+
+@media only screen and (max-width:700px) {
+    .about_meet_our_team_teachers {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about_meet_our_team {
+        height: 100%;
+    }
+}

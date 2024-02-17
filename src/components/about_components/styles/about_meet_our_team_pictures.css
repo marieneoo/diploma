@@ -1,0 +1,48 @@
+.icons a img{
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) invert(0);
+    
+}
+.icons a {
+    padding: 15%;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teachers_pics {
+    min-width: 220px;
+    min-height: 330px;
+    width: 35%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_team_pictures_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about_team_pictures_container p {
+    text-align: center;
+    width: 75%;
+    color: #62615c;
+    line-height: 25px;
+    padding-top: 3%;
+}
+
+.about_team_pictures_container h4 {
+    font-family: 'Merriweather';
+    font-size: 20px;
+    padding-top: 3%;
+}
+
+
+

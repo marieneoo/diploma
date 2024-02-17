@@ -1,0 +1,72 @@
+.footer {
+    background-color: #1E1810;
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+.footer_up {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    align-self: center;
+    border-bottom: 1px white solid;
+}
+
+.lotus_pic {
+    padding: 10%;
+    padding-bottom: 0;
+}
+
+.footer_up_logo p {
+    color: white;
+    padding: 5%;
+    padding-left: 10%;
+    
+}
+
+.footer_up_lotus, .footer_up_services, .footer_up_about, .footer_up_get_in_touch {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer_up_services, .footer_up_about, .footer_up_get_in_touch {
+    padding: 10%;
+}
+
+.footer_up_services h2, .footer_up_about h2, .footer_up_get_in_touch h2 {
+    color: white;
+    padding-bottom: 20%;
+}
+
+.footer_up_services a, .footer_up_about a, .footer_up_get_in_touch a {
+    text-decoration: none;
+    color: white;
+    padding-top: 5%;
+}
+
+.facebook_pic, .instagram_pic, .twitter_pic {
+    width: 20px;
+    height: 20px;
+    padding: 7%;
+}
+
+.footer_down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.footer_down_copyright {
+    color: white;
+    padding-left: 3%;
+}
+
+.footer_down_icons {
+    display: flex;
+    padding-right: 5%;
+    justify-content: space-between;
+}
+
