@@ -1,17 +1,15 @@
 import "./styles/home_classes.css"
-import home_classes_img from "../../assets/images/home/home_classes_background.jpg"
 import middle_img from "../../assets/images/home/about_classes_img.jpg"
-import line from "../../assets/images/line.svg"
 import Button from "../main_elements/button/button"
 export default function HomeClasses() {
     return (
         <div className="home_classes_container">
-        <div className="home_classes" style={{backgroundImage: `url(${home_classes_img})` , backgroundSize: 'cover'}}>
+        <div className="home_classes">
             
             <div className="home_about_classes_txt">
                 <h2>About our classes</h2>
                 <p>Our yoga classes offer a serene escape from the hustle and bustle of everyday life, providing a nurturing environment where practitioners of all levels can experience the profound benefits of yoga.</p>
-                <Button txt="BOOK NOW" id="home_about_classes_button" path="/contact"/>
+                <Button txt="BOOK NOW" id="home_about_classes_button" path="/contact" color="white"/>
             </div>
 
             <div className="middle_img_div">

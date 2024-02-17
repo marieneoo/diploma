@@ -1,5 +1,4 @@
 import "./styles/home_main.css"
-import background_image from "../../assets/images/home/home_main_background.jpg"
 import Button from "../main_elements/button/button.js";
 export default function HomeMain() {
     return (

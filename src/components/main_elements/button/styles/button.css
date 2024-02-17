@@ -26,6 +26,7 @@
     width: 24px;
     height: 24px;
     transition: background-image 0.5s;
+    margin-left: 5%;
 }
 
 .button.white > .arrow {
