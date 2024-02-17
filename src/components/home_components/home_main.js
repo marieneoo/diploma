@@ -3,7 +3,7 @@ import background_image from "../../assets/images/home/home_main_background.jpg"
 import Button from "../main_elements/button/button.js";
 export default function HomeMain() {
     return (
-      <div className="home_main" style={{backgroundImage: `url(${background_image})` , backgroundSize: 'cover' }}>
+      <div className="home_main">
         <div className="home_main_text_container">
 
           <h6>WELCOME TO ZEN YOGA STUDIO</h6>
