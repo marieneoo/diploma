@@ -2,7 +2,7 @@
     color: white;
     font-weight: 600 !important;
     min-width: 147.64px;
-    width: 30%;
+    width: calc(200px + 5vw);
     height: 46px;
     background-color: black;
     display: flex;
