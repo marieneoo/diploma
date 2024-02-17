@@ -69,9 +69,11 @@
             grid-template-columns: 1fr;
             grid-template-rows: repeat(4, 1fr);
             padding: 15%;
+            margin: 0;
+            height: 60%;
         }
 
-        .home_main_text_container h1 , .home_main_text_container h6, .home_main_text_container p {
+        .home_main_text_container h1 , .home_main_text_container h6, .home_main_text_container p, #home_main_button {
             align-self: center;
             justify-self: center;
             text-align: center;
