@@ -70,3 +70,46 @@
     justify-content: space-between;
 }
 
+/* @media only screen and (max-width:700px) {
+    .footer_up{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .footer{
+        height: 100%;
+    }
+
+    .footer_up_logo p {
+        padding-left: 0;
+        padding: 0 10%;
+        width: 40%;
+        text-align: center;
+    }
+
+    .footer_up_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .lotus_pic {
+        width: 70px;
+        height: 70px;
+    }
+
+    .footer_up_services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+}
+
+
+@media only screen and (max-width:1200px) {
+
+}  */
