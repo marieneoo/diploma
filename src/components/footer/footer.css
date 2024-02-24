@@ -70,7 +70,7 @@
     justify-content: space-between;
 }
 
-/* @media only screen and (max-width:700px) {
+@media only screen and (max-width:700px) {
     .footer_up{
         display: grid;
         grid-template-rows: repeat(4, 1fr);
@@ -112,4 +112,4 @@
 
 @media only screen and (max-width:1200px) {
 
-}  */
+} 

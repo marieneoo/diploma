@@ -14,13 +14,13 @@
 .home_make_an_appointment h4 {
     color: #ffb100;
     font-family: 'MerrieWeather';
-    font-size: 0.9rem;
+    font-size: calc(0.5rem + 0.5vw);
 }
 
 .home_make_an_appointment h1 {
     padding-top: 3%;
     font-family: 'MerrieWeather';
-    font-size: 3rem;
+    font-size: calc(0.7rem + 2vw);
 
 }
 
@@ -29,6 +29,7 @@
     width: 70%;
     color: #62615c;
     line-height: 25px;
+    font-size: calc(0.5rem + 1vw);
 }
 
 .home_make_an_appointment h6 {
@@ -114,3 +115,23 @@
     font-size: 15px;
 }
 
+@media only screen and (max-width:700px) {
+    .home_forms {
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+        justify-content: center;
+    }
+    
+    .home_forms_inputs {
+        display: flex;
+        flex-direction: column;
+        padding-left: 8%;
+    }
+
+    .home_contact {
+        justify-self: start;
+    }
+
+
+}
