@@ -14,10 +14,7 @@
 }
 
 .teachers_pics {
-    min-width: 220px;
-    min-height: 330px;
-    width: 35%;
-    height: 30%;
+    width: calc(100px + 8vw);
     display: flex;
     justify-content: center;
     align-items: center;

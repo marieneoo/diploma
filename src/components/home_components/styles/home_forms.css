@@ -29,11 +29,11 @@
     width: 70%;
     color: #62615c;
     line-height: 25px;
-    font-size: calc(0.5rem + 1vw);
+    font-size: calc(0.5rem + 0.6vw);
 }
 
 .home_make_an_appointment h6 {
-    font-size: 0.9rem;
+    font-size: calc(0.5rem + 1vw);
     letter-spacing: 5px;
 }
 
@@ -126,7 +126,6 @@
     .home_forms_inputs {
         display: flex;
         flex-direction: column;
-        padding-left: 8%;
     }
 
     .home_contact {

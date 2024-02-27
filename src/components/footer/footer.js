@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="footer_up">
                 <div className="footer_up_logo">
                     <img src={lotus_pic} className="lotus_pic"></img>
-                    <p> The lotus, an exquisite aquatic flower, captivates with its radiant petals emerging from murky waters. This elegant bloom is not only a symbol of purity and enlightenment.</p>
+                    <p> The lotus, an exquisite aquatic flower, captivates with its radiant petals emerging from murky waters. This elegant bloom is not only a symbol of purity.</p>
                 </div>
 
                 <div className="footer_up_services">

@@ -45,6 +45,7 @@
     text-decoration: none;
     color: white;
     padding-top: 5%;
+    font-size: calc(0.5rem + 0.5vw);
 }
 
 .facebook_pic, .instagram_pic, .twitter_pic {
@@ -106,6 +107,11 @@
         align-items: center;
         flex-direction: column;
         
+    }
+
+    .footer_down{
+        display: flex;
+        flex-direction: column;
     }
 }
 
