@@ -21,6 +21,7 @@
     color: #62615C;
     padding-top: 5%;
     width: 65%;
+    font-size: calc(0.5rem + 1vw);;
 }
 
 .first_class_txt h6 ,.second_class_txt h6 ,.third_class_txt h6 {
@@ -73,7 +74,7 @@
     .home_classes {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
     
     .first_class_txt,.second_class_txt,.third_class_txt  {

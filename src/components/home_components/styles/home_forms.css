@@ -126,11 +126,28 @@
     .home_forms_inputs {
         display: flex;
         flex-direction: column;
+        padding-left: 8%;
+        height: 0;
     }
 
     .home_contact {
         justify-self: start;
     }
 
+    #home_form_button {
+        margin-top: 5%;
+    }
 
+    
+    .home_forms_email_input, .home_forms_number_input {
+        margin: 5% 0;
+    } 
+    .home_forms_name_input{
+        margin-bottom:5%;
+
+    }
+    .home_forms_email_input input, .home_forms_number_input input,  .home_forms_name_input input{
+      padding: 2% 0;  
+    }
+    
 }
