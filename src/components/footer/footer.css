@@ -22,6 +22,7 @@
     color: white;
     padding: 5%;
     padding-left: 10%;
+    font-size: calc(0.7rem + 0.5vw);
     
 }
 
@@ -45,7 +46,7 @@
     text-decoration: none;
     color: white;
     padding-top: 5%;
-    font-size: calc(0.5rem + 0.5vw);
+    font-size: calc(0.7rem + 0.5vw);
 }
 
 .facebook_pic, .instagram_pic, .twitter_pic {
@@ -74,7 +75,7 @@
 @media only screen and (max-width:700px) {
     .footer_up{
         display: grid;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 0.5fr);
         grid-template-columns: 1fr;
     }
 
@@ -104,7 +105,6 @@
     .footer_up_services {
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-direction: column;
         
     }
