@@ -6,6 +6,8 @@ import Contact from './pages/contact.js';
 import Spa from './pages/spa.js';
 import Menu from './components/menu/index.js';
 import Footer from './components/footer/footer.js';
+import SignIn from './pages/authenticate/sign_in.js';
+import SignUp from './pages/authenticate/sign_up.js';
 import './App.css';
 
 function App() {
@@ -20,9 +22,12 @@ function App() {
         <Route path="/classes" element={<Classes/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/spa" element={<Spa/>}></Route>
+        <Route path="/sign_in" element={<SignIn/>}></Route>
+        <Route path="/sign_up" element={<SignUp/>}></Route>
       </Routes>
       <Footer/>
       </Router>
+    
      
     </div>
   );

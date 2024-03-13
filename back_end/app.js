@@ -4,18 +4,19 @@ const express = require('express')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const cookieParser = require('cookie-parser')
-//vercnum enq ayn PORT-y vory haytararvac e config.env filum vortex menq pahum enq mez anhrajesht popoxakannery
-//ete nranq unen krknman kariq(mek el vor mi texic poxenq mnacacn el poxvi)
-const port = process.env.PORT
 
 const app = express()
+//vercnum enq ayn PORT-y vory haytararvac e config.env filum vortex menq pahum enq mez anhrajesht popoxakannery
+//ete nranq unen krknman kariq(mek el vor mi texic poxenq mnacacn el poxvi)
 
 dotenv.config({path:'./config.env'});
 require('./db/conn.js')
 
-const Users = require('.models/userScheme.js')
+const port = process.env.PORT;
 
-app.use(express.json())
+const Users = require('./models/userScheme.js')
+
+app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 app.use(cookieParser())
 
@@ -24,7 +25,8 @@ app.get('/',(req,res)=>{
 } )
 
 //registration
-app.post('/register',async(req,res)=>{
+app.post('/register', async (req, res) => {
+    res.send("ok")
     try{
         const name = req.body.name;
         const mail = req.body.mail;
@@ -37,14 +39,40 @@ app.post('/register',async(req,res)=>{
         })
 
         const created = await createUser.save()
-        console.log('created')
         res.status(200).send('registered')
     } catch(error) {
         res.status(400).send(error)
     }
 })
 
-app.listen(port,()=>{
+app.post('/login', async (req, res) =>{
+    try {
+        const name=req.body.name
+        const mail=req.body.mail
+        const password=req.body.password
+
+        const user=await Users.findOne({mail:mail})
+        if(user) {
+            const isMatch=await bcrypt.compare(password,user.password)
+            if(isMatch) {
+                const token=await user.generateToken()
+                res.cookie('jwt',token,{
+                    express: new Date(Date.now()+86400000),
+                    httpOnly: true 
+                })
+                res.status(200).send("LoggedIn")
+            }else{
+                res.status(400).send("Invalid Credentials")
+            }
+        }else{
+            res.status(400).send("Invalid Credentials")
+        }
+    }catch(error){
+        res.status(400).send(error)
+    }
+})
+
+app.listen(port, ()=>{
 
     console.log("server is listening")
 })

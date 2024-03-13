@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 const bcrypt = require('bcrypt')
-const jwt = require('jsonwebtoken')
+const jwt = require('jsonwebtoken')// require enq arel en package-y, vori mijocov karoxanum enq generate anel token
 
-const userScheme = new mongoose.Scheme({
+const userScheme = new mongoose.Schema({
     name: {
         type: String,
         required: true

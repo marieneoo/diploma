@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose') //mongoose-y mongodb-i package-a, vory tuyl a talis infoyi poxanakum
 const db = process.env.DATABASE;
 
 mongoose.connect(db).then(()=>{
