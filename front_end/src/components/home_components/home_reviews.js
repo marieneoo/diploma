@@ -1,3 +1,4 @@
+import React from 'react';
 import "./styles/home_reviews.css"
 import commas from "../../assets/images/home/commas.png"
 import home_username_pic from "../../assets/images/home/home_username_pic.jpg"

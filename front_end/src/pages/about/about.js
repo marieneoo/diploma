@@ -1,3 +1,4 @@
+import React from 'react';
 import "./about.css"
 import AboutKnowMore from "../../components/about_components/about_know_more.js";
 import ZenYogaStudio from "../../components/about_components/zen_yoga_studio.js";

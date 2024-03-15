@@ -1,3 +1,4 @@
+import React from 'react';
 const FormButton = ({txt}) => {
     return(
         <div className="form_button">

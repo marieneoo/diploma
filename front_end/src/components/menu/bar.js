@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavLink } from "react-router-dom"
 import lotus from "../../assets/images/lotus_logo.svg"
 export default function Bar() {

@@ -1,3 +1,4 @@
+import React from 'react';
 import "./styles/home_appointment.css"
 import Button from "../main_elements/button/button"
 export default function HomeAppointment () {

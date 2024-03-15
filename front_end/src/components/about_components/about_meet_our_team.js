@@ -1,3 +1,4 @@
+import React from 'react';
 import "./styles/about_meet_our_team.css"
 import AboutOurTeamPictures from "./about_team_pictures"
 export default function AboutMeetOurTeam() {

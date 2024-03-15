@@ -1,3 +1,4 @@
+import React from 'react';
 import "./styles/about_beauty_wellness.css"
 import lotus_pic from "../../assets/images/about/lotus_pic.svg"
 import hands_pic from "../../assets/images/about/hands_pic.png"

@@ -1,3 +1,4 @@
+import React from 'react';
 import "./home.css"
 import HomeClasses from "../../components/home_components/home_classes.js";
 import HomeMain from "../../components/home_components/home_main.js";

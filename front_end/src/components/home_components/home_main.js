@@ -1,3 +1,4 @@
+import React from 'react';
 import "./styles/home_main.css"
 import Button from "../main_elements/button/button.js";
 export default function HomeMain() {

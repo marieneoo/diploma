@@ -1,3 +1,4 @@
+import React from 'react';
 import instagram from "../../assets/images/instagram.svg"
 import facebook from "../../assets/images/facebook.svg"
 import { NavLink } from "react-router-dom"

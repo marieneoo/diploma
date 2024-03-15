@@ -1,3 +1,4 @@
+import React from 'react';
 import "./styles/about_meet_our_team_pictures.css"
 import instagram_pic from "../../assets/images/instagram.svg"
 import facebook_pic from "../../assets/images/facebook.svg"

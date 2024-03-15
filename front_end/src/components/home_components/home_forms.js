@@ -1,3 +1,4 @@
+import React from 'react';
 import "./styles/home_forms.css"
 import Button from "../main_elements/button/button.js"
 import clock_icon from "../../assets/images/home/clock_icon.svg"

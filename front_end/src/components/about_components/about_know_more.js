@@ -1,3 +1,4 @@
+import React from 'react';
 import "./styles/about_know_more.css"
 export default function AboutKnowMore() {
     return (

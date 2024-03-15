@@ -1,3 +1,4 @@
+import React from 'react';
 import "./styles/zen_yoga_studio.css"
 import commas_pic from "../../assets/images/home/commas.png"
 import username_pic from "../../assets/images/home/home_username_pic.jpg"

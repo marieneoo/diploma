@@ -1,3 +1,4 @@
+import React from 'react';
 const Input = ({txt,name,value,onChange}) => {
     return(
         <div>

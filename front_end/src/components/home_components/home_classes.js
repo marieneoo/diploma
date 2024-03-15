@@ -1,3 +1,4 @@
+import React from 'react';
 import "./styles/home_classes.css"
 import middle_img from "../../assets/images/home/about_classes_img.jpg"
 import Button from "../main_elements/button/button"

@@ -1,3 +1,4 @@
+import React from 'react';
 import "./styles/menu.css"
 import Bar from "../menu/bar.js"
 import Main from "./main.js";
