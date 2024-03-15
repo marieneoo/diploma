@@ -1,8 +1,10 @@
 import React from 'react';
-const Input = ({txt,name,value,onChange}) => {
+import "./styles/input.css"
+const Input = ({type, txt}) => {
     return(
         <div>
-           <input className='form_input' type='text' placeholder={txt} name={name} value={value} onChange={onChange} /></div>
+            <input type={type} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder={txt}/>
+            </div>
     )
 }
 

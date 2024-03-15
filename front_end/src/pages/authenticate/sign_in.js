@@ -1,10 +1,10 @@
 import React from 'react';
 import './authenticate.css'
-import {FormLogIn} from './../../components/authenticate/authenticate.js'
+import {FormSignIn} from './../../components/authenticate/authenticate.js'
 export default function SignIn() {
     return(
         <div className="sign_in">
-            <FormLogIn/>
+            <FormSignIn/>
         </div>
     )
 }
