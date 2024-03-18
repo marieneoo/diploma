@@ -76,7 +76,7 @@
     padding: 0;
 }
 
-.home_forms_inputs {
+_inputs {
     height: 60%;
     width: 100%;
     display: grid;
@@ -126,7 +126,7 @@
     .home_forms_inputs {
         display: flex;
         flex-direction: column;
-        padding-left: 8%;
+        
         height: 0;
     }
 
