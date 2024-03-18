@@ -86,6 +86,13 @@ _inputs {
 
 }
 
+.home_forms_inputs{
+    padding:20% 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4 1fr);
+}
+
 .home_forms h5 {
     font-family: 'Inter', sans serif;
     font-size: 16px;
@@ -98,17 +105,22 @@ _inputs {
     padding-left: 7px;
 }
 
+.home_forms_email_input, .home_forms_number_input, .home_forms_name_input {
+    padding: 5% 0;
+} 
+
+
+
 
 .home_forms_inputs input {
     width: 80%;
-    height: 60%;
+    height: 40%;
     border-radius: 3px;
     box-shadow: none;
     background-color: white;
     border: none;
     border: solid 1px #dddddd;
     font-size: 15px;
-    padding: 0 2%;
 }
 
 #home_form_button {
@@ -126,10 +138,10 @@ _inputs {
     .home_forms_inputs {
         display: flex;
         flex-direction: column;
-        
-        height: 0;
     }
-
+    .home_forms_inputs input {
+        padding: 2%;
+    }
     .home_contact {
         justify-self: start;
     }
@@ -147,7 +159,7 @@ _inputs {
 
     }
     .home_forms_email_input input, .home_forms_number_input input,  .home_forms_name_input input{
-      padding: 2% 0;  
+      padding: 2%;  
     }
     
 }

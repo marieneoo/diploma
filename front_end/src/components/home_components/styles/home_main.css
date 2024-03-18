@@ -20,13 +20,14 @@
     }
     
     .home_main_text_container h6 {
-        font-size: calc(5px + 0.3vw);
+        font-size: calc(5px + 0.8vw);
         color: white;
         align-self: center;
     }
     
     .home_main_text_container p {
         font-size: calc(10px + 0.8vw);
+        width: 90%;
         color: white;
     }
     
@@ -35,6 +36,7 @@
         grid-template-rows: repeat(4,1fr);
         grid-template-columns: 1fr;
         justify-self: center;
+        margin-left: 8%;
         align-self: end;
         justify-content: left;
         height: 90vh;
