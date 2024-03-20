@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer">
             <div className="footer_up">
                 <div className="footer_up_logo">
-                    <img src={lotus_pic} className="lotus_pic"></img>
+                    <img src={lotus_pic} className="lotus_pic_footer"></img>
                     <p> The lotus, an exquisite aquatic flower, captivates with its radiant petals emerging from murky waters. This elegant bloom is not only a symbol of purity.</p>
                 </div>
 
@@ -34,7 +34,7 @@ export default function Footer() {
 
                 <div className="footer_up_get_in_touch">
                     <h2>Get In Touch</h2>
-                    <NavLink to="/contact">123 Fifth Avenue, New York, NY</NavLink>
+                    <NavLink to="/contact">123 Fifth Avenue</NavLink>
                     <NavLink to="/contact">060, Armenia.</NavLink>
                     <NavLink to="/contact">+374 33 344 699</NavLink>
                     <NavLink to="/contact">yinyoga@gmail.com</NavLink>
