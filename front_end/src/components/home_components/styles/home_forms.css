@@ -138,6 +138,7 @@ _inputs {
     .home_forms_inputs {
         display: flex;
         flex-direction: column;
+        padding-left: 8%;
     }
     .home_forms_inputs input {
         padding: 2%;

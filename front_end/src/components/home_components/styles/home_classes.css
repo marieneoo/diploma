@@ -68,7 +68,7 @@
     .home_classes_container {
         background-image: none;
         background-color: #E6F0EE;
-        height: calc(200vh + 20vw);
+        height: calc(250vh + 20vw);
     }
 
     .home_classes {
