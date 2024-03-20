@@ -24,6 +24,10 @@
 
 .bar ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .bar ul li {
@@ -46,9 +50,9 @@
 
 .instagram_img,
 .facebook_img {
-    width: 20px;
-    height: 20px;
-    padding: 1.3vw;
+    width: calc(10px + 1vw);
+    height: calc(10px + 1vw);
+    margin-right: 3%;
 }
 
 
@@ -56,6 +60,7 @@
     border: solid 1px white;
     margin-left: 1.3vw;
     background-color: rgba(255, 255, 255, 0);
+    width: calc(90px + 7vw);
 }
 
 #menu_button:hover {
@@ -94,4 +99,12 @@
         margin: 26px 0;
 
     }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .instagram_img,.facebook_img {
+        display: none;
+    }
+
 }
