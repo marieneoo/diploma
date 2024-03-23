@@ -131,7 +131,7 @@ _inputs {
     .home_forms {
         display: flex;
         flex-direction: column;
-        height: 200vh;
+        height: calc(200vh + 40vw);
         justify-content: center;
     }
     

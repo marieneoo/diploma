@@ -69,13 +69,13 @@
     .home_classes_container {
         background-image: none;
         background-color: #E6F0EE;
-        height: calc(130vh + 125vw);
+        height: calc(130vh + 190vw);
     }
 
     .home_classes {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 1fr 0.2fr;
+        grid-template-rows: 0.1fr 0.8fr 0.2fr;
     }
     
     .first_class_txt,.second_class_txt,.third_class_txt  {
@@ -128,4 +128,7 @@
         width: 100%;
     }
     
+    p {
+        font-size: calc(0.5rem + 1vw);
+    }
 }
