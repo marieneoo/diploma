@@ -23,7 +23,7 @@ export default function AboutMeetOurTeam() {
                 <div className="about_meet_our_team_second_teacher">
                 <AboutOurTeamPictures pic="2"
                         name="Emily Johansson"
-                        bio="A Vinyasa enthusiast, Emily's classes are dynamic and invigorating, encouraging students to push their boundaries and explore their inner strength while maintaining a mindful connection to their breath."
+                        bio="A Vinyasa enthusiast, Emily's classes are dynamic and invigorating, encouraging students to push their boundaries and explore their inner strength while maintaining a mindful connection."
                         instagram_path="https://www.instagram.com/"
                         facebook_path="https://www.facebook.com/"
                         twitter_path="https://twitter.com/?lang=en"

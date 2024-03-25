@@ -1,5 +1,5 @@
 .about_meet_our_team {
-    height: 130vh;
+    height: calc(90vh + 5vw);
     width: 100%;
     display: grid;
     grid-template-rows: 0.5fr 1.5fr;
@@ -19,7 +19,8 @@
 
 .about_meet_our_team_top h2 {
     font-family: 'Merriweather';
-    font-size: 40px;
+    font-size: calc(1rem + 3vw);
+    text-align: center;
 }
 
 .about_meet_our_team_top p {
