@@ -30,7 +30,6 @@
 .commas_pic {
     width: 20px;
     height: 20px;
-    padding-top: 15%;
 }
 
 .zen_yoga_studio_relax p {
@@ -105,7 +104,11 @@
     }
 
     .zen_yoga_studio_relax{
-        padding: 0;
+        padding-left: 5%;
+    }
+
+    .yoga_retreat_pic{
+        height: 90%;
     }
 
     .zen_yoga_studio_paragraph {
@@ -126,23 +129,29 @@
 
     .zen_yoga_studio_paragraph p:nth-child(2), .zen_yoga_studio_paragraph p:first-child {
         padding-top: 0;
+        padding-left: 3%;
         font-size: calc(0.6rem + 0.2vw);
-        text-align: center;
-
+        font-size: calc(0.6rem + 0.5vw);
     }
 
     .zen_yoga_studio_paragraph p:first-child {
         padding-top: 5%;
     }
+
+    .commas_pic{
+        padding-top: 0;
+    }
     
     .zen_yoga_studio_slider {
-        padding: 5%;
         align-items: start;
         width: 80%;
-        height: 60%;
+        height: 75vh;
+        display: flex;
+       justify-content: center;
+       align-items: center;
     }
     .zen_yoga_studio_relax h6{
-        margin:5%;
+        margin-left: 1%;
     }
 
     .zen_yoga_studio_paragraph p {
@@ -170,6 +179,7 @@
     }
     .zen_yoga_studio_relax, .zen_yoga_studio_slider, .zen_yoga_studio_paragraph{
         width: 90%;
+        height: 65vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -177,7 +187,7 @@
     }
 
     .yoga_retreat_pic {
-        height: width;
+        height: calc(150px + 50vw);
         width: calc(50px + 50vw);
     } 
     .zen_yoga_studio_relax_profile_txt, .zen_yoga_studio_relax_profile{

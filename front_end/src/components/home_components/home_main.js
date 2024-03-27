@@ -6,9 +6,9 @@ export default function HomeMain() {
       <div className="home_main">
         <div className="home_main_text_container">
 
-          <h6>WELCOME TO ZEN YOGA STUDIO</h6>
-          <h1>REJUVENATED BODY & SOUL</h1>
-          <p>Step into our inclusive yoga studio, where everyone is welcome to find their inner peace and strength.</p>
+          <h6>ԲԱՐԻ ԳԱԼՈՒՍՏ ZEN YOGA STUDIO</h6>
+          <h1>ԵՐԻՏԱՍԱՐԴԱՑԱԾ ՄԱՐՄԻՆ և ՀՈԳԻ</h1>
+          <p>Մտեք մեր ներառական յոգայի ստուդիա, որտեղ բոլորը կարող են գտնել իրենց ներքին խաղաղությունն ու ուժը:</p>
           <Button id="home_main_button" txt="BOOK A LESSON" path="/contact" color="black"/>
         </div>
         

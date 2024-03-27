@@ -14,7 +14,7 @@
 }
 
 .teachers_pics {
-    width: calc(100px + 2vw);
+    width: calc(100px + 3.5vw);
     display: flex;
     justify-content: center;
     align-items: center;
