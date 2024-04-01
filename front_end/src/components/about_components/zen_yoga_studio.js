@@ -8,15 +8,15 @@ export default function ZenYogaStudio() {
         <div className="zen_yoga_studio">
             <div className="zen_yoga_studio_relax">
                 <h6>ZEN YOGA STUDIO</h6>
-                <h2>Where you can relax and enjoy life</h2>
+                <h2>Մեզ կարող եք հանգստանալ և վայելել կյանքը</h2>
                 <img src={commas_pic} className="commas_pic"></img>
-                <p>I can't say enough good things about this yoga studio. From the moment I stepped through the door, I felt welcomed and at ease. The instructors are not only skilled but also incredibly compassionate.</p>
+                <p>Ես կարող եմ միայն լավ բաներ ասել այս յոգայի ստուդիայի մասին: Այն պահից, երբ ես մտա ներս, ես ինձ հանգիստ զգացի: Հրահանգիչները ոչ միայն հմուտ են, այլև աներևակայելի կարեկցող:</p>
                 <div className="zen_yoga_studio_relax_profile">
                     <img src={username_pic} className="username_pic"></img>
 
                     <div className="zen_yoga_studio_relax_profile_txt">
-                    <p>brenda greene</p>
-                    <p>San Francisco</p>
+                    <p>աննա մկրտչյան</p>
+                    <p>Ք․ Երևան</p>
                     </div>
 
                 </div>
@@ -28,8 +28,8 @@ export default function ZenYogaStudio() {
             </div>
 
             <div className="zen_yoga_studio_paragraph">
-                <p>At our yoga studio, we are dedicated to fostering a community of well-being, growth, and inclusivity. Our journey began with a simple but profound belief in the transformative power of yoga to enrich lives. We have created a space where everyone, regardless of their level of experience, can embark on a path of self-discovery, finding harmony of body and mind.</p>
-                <p>Our team of experienced and compassionate instructors is committed to guiding you through a diverse range of yoga styles, from the gentle and grounding practice of Hatha to the invigorating flow of Vinyasa and the spiritually enlightening journey of Kundalini. We believe that yoga is not just a physical practice but a holistic lifestyle that can lead to greater fulfillment and balance in everyday life. Come join us in our welcoming and nurturing studio, and let’s embark on this journey to wellness and self-realization together.</p>
+                <p>Մեր յոգայի ստուդիայում մենք նվիրված ենք բարեկեցության, աճի և ներառականության համայնքի զարգացմանը: Մեր ճամփորդությունը սկսվեց պարզ, բայց խորը հավատով դեպի կյանքը հարստացնելու յոգայի փոխակերպող ուժը: Մենք ստեղծել ենք մի տարածք, որտեղ յուրաքանչյուրը, անկախ իր փորձի մակարդակից, կարող է մասնակցել մեր դասընթացներին:</p>
+                <p>Փորձառու և կարեկցող հրահանգիչների մեր թիմը պարտավորվում է առաջնորդել ձեզ յոգայի ոճերի բազմազանությամբ՝ սկսած Հաթայի նուրբ և հիմնավոր պրակտիկայից մինչև Վինյասայի կազդուրիչ հոսքը և Կունդալինիի հոգևոր լուսավոր ճամփորդությունը: Մենք հավատում ենք, որ յոգան ոչ միայն ֆիզիկական պրակտիկա է, այլ ամբողջական ապրելակերպ, որը կարող է հանգեցնել ավելի մեծ կատարման և հավասարակշռության առօրյա կյանքում: </p>
 
             </div>
 

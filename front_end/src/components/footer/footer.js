@@ -11,33 +11,33 @@ export default function Footer() {
             <div className="footer_up">
                 <div className="footer_up_logo">
                     <img src={lotus_pic} className="lotus_pic_footer"></img>
-                    <p> The lotus, an exquisite aquatic flower, captivates with its radiant petals emerging from murky waters. This elegant bloom is not only a symbol of purity.</p>
+                    <p>Լոտոսը՝ նուրբ ջրային ծաղիկը, գրավում է ջրերից դուրս եկող իր փայլուն ծաղկաթերթիկներով: Այս նրբագեղ ծաղիկը մաքրության և հանգստության խորհրդանիշ է:</p>
                 </div>
 
                 <div className="footer_up_services">
-                    <h2>Services</h2>
-                    <NavLink to="/spa">Luxury Spa</NavLink>
-                    <NavLink to="/spa">Stone Therapy</NavLink>
-                    <NavLink to="/spa">Aroma Spa</NavLink>
-                    <NavLink to="/spa">Skin Treatment</NavLink>
+                    <h2>Ծառայություններ</h2>
+                    <NavLink to="/spa">Սպա</NavLink>
+                    <NavLink to="/spa">Քարերով թերապիա</NavLink>
+                    <NavLink to="/spa">Շոքեբաղնիք</NavLink>
+                    <NavLink to="/spa">Մաշկի բուժում</NavLink>
 
                 </div>
 
                 <div className="footer_up_about">
-                    <h2>About</h2>
-                    <NavLink to="/about">Our Story</NavLink>
-                    <NavLink to="/about">Experts</NavLink>
-                    <NavLink to="/about">Pricing</NavLink>
-                    <NavLink to="/about">Contact Us</NavLink>
+                    <h2>Մեր Մասին</h2>
+                    <NavLink to="/about">Մեր մասին</NavLink>
+                    <NavLink to="/about">Մեր մասնագետները</NavLink>
+                    <NavLink to="/about">Գները</NavLink>
+                    <NavLink to="/about">Կապ</NavLink>
 
                 </div>
 
                 <div className="footer_up_get_in_touch">
-                    <h2>Get In Touch</h2>
-                    <NavLink to="/contact">123 Fifth Avenue</NavLink>
-                    <NavLink to="/contact">060, Armenia.</NavLink>
+                    <h2>Կապ</h2>
+                    <NavLink to="/contact">Hrachya Kochar 41</NavLink>
+                    <NavLink to="/contact">Yerevan, Armenia</NavLink>
                     <NavLink to="/contact">+374 33 344 699</NavLink>
-                    <NavLink to="/contact">yinyoga@gmail.com</NavLink>
+                    <NavLink to="/contact">zenyogastudio.com</NavLink>
                 </div>
 
 
@@ -45,7 +45,7 @@ export default function Footer() {
 
             <div className="footer_down">
                 <div className="footer_down_copyright">
-                    <p>Copyright © 2024 . Powered by .</p>
+                    <p>Copyright © 2024 . Powered by ZenYogaStudio</p>
 
                 </div>
 

@@ -1,0 +1,13 @@
+.authenticate_pic_container {
+    background-color: #D0AA94;
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.authenticate_img {
+    width: calc(50px + 48vw);
+    height: width;
+    align-self: end;
+    justify-self:end;
+}

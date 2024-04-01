@@ -9,7 +9,7 @@ export default function HomeMain() {
           <h6>ԲԱՐԻ ԳԱԼՈՒՍՏ ZEN YOGA STUDIO</h6>
           <h1>ԵՐԻՏԱՍԱՐԴԱՑԱԾ ՄԱՐՄԻՆ և ՀՈԳԻ</h1>
           <p>Մտեք մեր ներառական յոգայի ստուդիա, որտեղ բոլորը կարող են գտնել իրենց ներքին խաղաղությունն ու ուժը:</p>
-          <Button id="home_main_button" txt="BOOK A LESSON" path="/contact" color="black"/>
+          <Button id="home_main_button" txt="ԳՐԱՆՑՎԵԼ ԴԱՍԸՆԹԱՑԻ" path="/contact" color="black"/>
         </div>
         
       </div>

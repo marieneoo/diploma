@@ -5,8 +5,8 @@ export default function AboutKnowMore() {
         <div className="about_know_more">
 
             <div className="about_know_more_txt">
-                <h6>KN0W MORE</h6>
-                <h1>About Us</h1>
+                <h6>ԻՄԱՑԻՐ ԱՎԵԼԻՆ</h6>
+                <h1>Մեր Մասին</h1>
             </div>
             
         </div>

@@ -33,8 +33,8 @@
 }
 
 .home_make_an_appointment h6 {
-    font-size: calc(0.5rem + 1vw);
-    letter-spacing: 5px;
+    font-size: calc(0.4rem + 1vw);
+    letter-spacing: 3px;
 }
 
 .home_opening_hours_container {
@@ -95,7 +95,7 @@ _inputs {
 
 .home_forms h5 {
     font-family: 'Inter', sans serif;
-    font-size: 16px;
+    font-size: calc(0.5rem + 0.7vw);
     color: #62615c;
     display: flex;
 }

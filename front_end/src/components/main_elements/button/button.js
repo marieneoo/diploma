@@ -8,6 +8,7 @@ export default function Button({ txt, id, path, img, color }) {
             {txt}
             {img ? null : <div className="arrow" alt="Arrow"></div>}
         </NavLink>
+
     )
 
 }

@@ -9,6 +9,7 @@ import Menu from './components/menu/index.js';
 import Footer from './components/footer/footer.js';
 import SignIn from './pages/authenticate/sign_in.js';
 import SignUp from './pages/authenticate/sign_up.js';
+import ForgPass from './pages/authenticate/forg_pass.js';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/spa" element={<Spa/>}></Route>
         <Route path="/sign_in" element={<SignIn/>}></Route>
         <Route path="/sign_up" element={<SignUp/>}></Route>
+        <Route path="/forgot_password" element={<ForgPass/>}></Route>
       </Routes>
       <Footer/>
       </Router>

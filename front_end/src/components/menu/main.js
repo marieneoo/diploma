@@ -11,7 +11,7 @@ export default function Main() {
 {/*        
             <NavLink className="book_now_btn"  to="/contact" >BOOK NOW</NavLink> */}
 
-            <Button id="menu_button" txt="BOOK NOW" path="/contact" img="null" />
+            <Button id="menu_button" txt="ԳՐԱՆՑՎԵԼ ՀԻՄԱ" path="/contact" img="null" />
         
         </div>
     )

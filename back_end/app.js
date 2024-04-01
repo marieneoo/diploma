@@ -25,9 +25,9 @@ app.get('/',(req,res)=>{
 } )
 
 //registration
+//registration
 app.post('/register', async (req, res) => {
-    res.send("ok")
-    try{
+    try {
         const name = req.body.name;
         const mail = req.body.mail;
         const password = req.body.password;
@@ -36,14 +36,15 @@ app.post('/register', async (req, res) => {
             name: name,
             mail: mail,
             password: password
-        })
+        });
 
-        const created = await createUser.save()
-        res.status(200).send('registered')
-    } catch(error) {
-        res.status(400).send(error)
+        const createdUser = await createUser.save();
+        res.status(200).send('registered');
+    } catch (error) {
+        res.status(400).send(error);
     }
-})
+});
+
 
 app.post('/login', async (req, res) =>{
     try {

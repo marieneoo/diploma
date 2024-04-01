@@ -7,11 +7,11 @@ export default function HomeReviews () {
         <div className="home_reviews">
         <div className="home_reviews_container">
             <img src={commas} className="home_commas_pic"></img>
-            <h1>OUR REVIEWS</h1>
-            <p>I absolutely love this yoga studio! The inclusive and welcoming atmosphere is truly refreshing. The instructors are not only knowledgeable but also incredibly supportive, making every class a transformative experience.</p>
+            <h1>ԿԱՐԾԻՔՆԵՐ ՄԵՐ ՄԱՍԻՆ</h1>
+            <p>Ես սիրում եմ Զեն Յոգայի Ստուդիան: Ներառական և հյուրընկալ մթնոլորտն իսկապես թարմացնող է: Ուսուցիչները ոչ միայն բանիմաց են, այլև աներևակայելիորեն աջակցում են՝ յուրաքանչյուր դասը դարձնելով փոխակերպող փորձ:</p>
             <img className="home_username_pic" src={home_username_pic}></img>
-            <h5>brenda greene</h5>
-            <h6>San Francisco</h6>
+            <h5>Աննա Մկրտչյան</h5>
+            <h6>Ք․ Երևան</h6>
         </div>
         </div>
     )

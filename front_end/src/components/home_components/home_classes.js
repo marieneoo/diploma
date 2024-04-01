@@ -8,9 +8,9 @@ export default function HomeClasses() {
         <div className="home_classes">
             
             <div className="home_about_classes_txt">
-                <h2>About our classes</h2>
-                <p>Our yoga classes offer a serene escape from the hustle and bustle of everyday life, providing a nurturing environment where practitioners of all levels can experience the profound benefits of yoga.</p>
-                <Button txt="BOOK NOW" id="home_about_classes_button" path="/contact" color="white"/>
+                <h2>Մեր դասերի մասին</h2>
+                <p>Յոգայի մեր դասընթացներն առաջարկում են հանգիստ առօրյա կյանքից՝ ապահովելով սնուցող միջավայր, որտեղ բոլոր մակարդակների պրակտիկանտները կարող են զգալ յոգայի օգուտը:</p>
+                <Button txt="ԳՐԱՆՑՎԵԼ ՀԻՄԱ" id="home_about_classes_button" path="/contact" color="white"/>
             </div>
 
             <div className="middle_img_div">
@@ -22,22 +22,22 @@ export default function HomeClasses() {
             <div className="yoga_styles_txt">
                 <div className="first_class_txt">
                 <h6>01</h6>
-                <h4>Hatha Yoga</h4>
-                <p>Hatha yoga is a foundational practice that focuses on physical postures (asanas) and breath control (pranayama) to achieve balance and harmony in the body and mind. </p>
+                <h4>Հաթա Յոգա</h4>
+                <p>Հաթա յոգան հիմնարար պրակտիկա է, որը կենտրոնանում է ֆիզիկական կեցվածքի (ասանաների) և շնչառության վերահսկման (պրանայամա) վրա՝ մարմնի և մտքի հավասարակշռության և ներդաշնակության հասնելու համար: </p>
                 </div>
 
                 <div className="second_class_txt">
                     <h6>02</h6>
-                    <h4>Vinyasa Flow</h4>
-                    <p>Vinyasa yoga is characterized by the seamless flow of postures, synchronized with breath, creating a dynamic and challenging practice.</p>
+                    <h4>Վինյասա</h4>
+                    <p>Վինյասա յոգան բնութագրվում է կեցվածքի անխափան հոսքով, որը միանում է շնչառության հետ՝ ստեղծելով դինամիկ և միաժամանակ հանգիստ պրակտիկա:</p>
 
                 </div>
 
                 <div className="third_class_txt">
                     
                     <h6>03</h6>
-                    <h4>Kundalini Yoga</h4>
-                    <p>Kundalini yoga blends postures, breathwork, and meditation techniques to awaken the energy at the base of the spine.</p>
+                    <h4>Կունդալինի Յոգա</h4>
+                    <p>Կունդալինի յոգան միախառնում է կեցվածքը, շնչառությունը և մեդիտացիայի տեխնիկան՝ ողնաշարի հիմքում էներգիան արթնացնելու համար:</p>
 
                 </div>
             </div>

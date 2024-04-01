@@ -8,9 +8,9 @@ export default function HomeForms() {
     return (
         <div className="home_forms">
             <div className="home_make_an_appointment">
-                <h4>WHAT ARE YOU WAITING FOR...</h4>
-                <h1>Make an appointment</h1>
-                <p>Ready to take the next step in your wellness journey? Making an appointment at our yoga studio is your first step toward self-discovery and well-being. Whether you’re a seasoned yogi or a beginner, our expert instructors are here to guide you.</p>
+                <h4>ԻՆՉԻ՞Ն ԵՔ ՍՊԱՍՈՒՄ...</h4>
+                <h1>Ամրագրեք Այց</h1>
+                <p>Պատրա՞ստ եք կատարել ձեր առողջական ճանապարհորդության հաջորդ քայլը: Մեր յոգայի ստուդիայում այցի ամրագրումը ձեր առաջին քայլն է դեպի ինքնաբացահայտում և բարեկեցություն: </p>
 
                 <div className="home_opening_hours_container">
 
@@ -18,10 +18,10 @@ export default function HomeForms() {
                     <div className="home_our_location">
                         <div className="home_our_location_icon">
                             <img src={location_icon} className="home_location_icon"></img>
-                            <h6>OUR LOCATION</h6>
+                            <h6>ՄԵՐ ՀԱՍՑԵՆ</h6>
                         </div>
 
-                        <p>123 Fifth Avenue, New York, NY 10160, United States.</p>
+                        <p>Hrachya Kochar 41, Yerevan, Armenia</p>
                     </div>
 
                     <div className="home_clock_store">
@@ -29,21 +29,21 @@ export default function HomeForms() {
                     <div className="home_opening_hours">
                         <div className="home_opening_hours_icon">
                         <img src={clock_icon} className="home_clock_icon"></img>
-                            <h6>OPENING HOURS</h6>
+                            <h6>ԱՇԽԱՏՔԱՅԻՆ ԺԱՄԵՐԸ</h6>
                         </div>
 
-                        <p>Mon-Fri: 6am-10pm</p>
-                        <p>Sat-Sun: 8am-2pm</p>
+                        <p>Երկուշաբթի-ՈՒրբաթ: 6։00-22։00</p>
+                        <p>Շաբաթ-Կիրակի: 6։00-20։00</p>
                     </div>
 
                     <div className="home_contact">
                         <div className="home_contact_icon">
                         <img src={store_icon} className="home_store_icon"></img>
-                            <h6>CONTACT</h6>
+                            <h6>ԿԱՊ ՄԵԶ ՀԵՏ</h6>
                         </div>
 
-                        <p>Phone: +1 123-456-7890</p>
-                        <p>Email: zenyogastudio@gmail.com</p>
+                        <p>Հեռ․՝ +37433344699</p>
+                        <p>Էլ․հասցե՝ zenyogastudio@gmail.com</p>
                     </div>
                     </div>
 
@@ -53,21 +53,21 @@ export default function HomeForms() {
 
                 <div className="home_forms_inputs">
                     <div className="home_forms_name_input">
-                    <h5>Name <p>*</p></h5>
+                    <h5>Անուն <p>*</p></h5>
                     <input type="text" required></input>
                     </div>
                     
                     <div className="home_forms_email_input">
-                    <h5>Email <p>*</p></h5>
+                    <h5>Էլ․հասցե <p>*</p></h5>
                     <input type="mail" required></input>
                     </div>
                     
                     <div className="home_forms_number_input">
-                    <h5>Phone number <p>*</p></h5>
+                    <h5>Հեռախոսահամար <p>*</p></h5>
                     <input type="number" required></input>
                     </div>
 
-                    <Button txt="SAVE UP TO 50% TODAY" id="home_form_button" path="/contact" color="black" img="none" />
+                    <Button txt="50% ԶԵՂՉ ՄԻԱՅՆ ԱՅՍՕՐ" id="home_form_button" path="/contact" color="black" img="none" />
 
                 </div>
 

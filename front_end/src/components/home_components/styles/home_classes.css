@@ -22,7 +22,7 @@
     color: #62615C;
     padding-top: 5%;
     width: 65%;
-    font-size: calc(0.5rem + 1vw);;
+    font-size: calc(0.5rem + 0․5vw);;
 }
 
 .first_class_txt h6 ,.second_class_txt h6 ,.third_class_txt h6 {
@@ -57,7 +57,7 @@
     color: #62615C;
     width: 80%;
     padding-top: 5%;
-    font-size: calc(0.5rem + 1vw);
+    font-size: calc(0.5rem + 0․5vw);
     line-height: 2;
 }
 

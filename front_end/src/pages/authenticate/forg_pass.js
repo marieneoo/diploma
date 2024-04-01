@@ -1,12 +1,12 @@
 import React from 'react';
 import './authenticate.css'
-import { FormSignUp } from '../../components/authenticate/authenticate.js';
+import {FormForgPass} from './../../components/authenticate/authenticate.js'
 import AuthenticatePic from '../../components/authenticate/pic.js';
-export default function SignUp() {
+export default function ForgPass() {
     return(
         <div className="authenticate">
-            <FormSignUp/>
-        <AuthenticatePic/>
+            <FormForgPass/>
+            <AuthenticatePic/>
         </div>
     )
 }
