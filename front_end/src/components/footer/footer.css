@@ -30,6 +30,8 @@
 .footer_up_lotus, .footer_up_services, .footer_up_about, .footer_up_get_in_touch {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 

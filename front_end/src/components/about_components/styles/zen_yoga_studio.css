@@ -130,8 +130,8 @@
     .zen_yoga_studio_paragraph p:nth-child(2), .zen_yoga_studio_paragraph p:first-child {
         padding-top: 0;
         padding-left: 3%;
-        font-size: calc(0.6rem + 0.2vw);
-        font-size: calc(0.6rem + 0.5vw);
+        font-size: calc(0.5rem + 0.1vw);
+        font-size: calc(0.5rem + 0.2vw);
     }
 
     .zen_yoga_studio_paragraph p:first-child {
@@ -167,7 +167,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: calc(170vh + 10vw);
     }   
 
     .zen_yoga_studio_slider, .zen_yoga_studio_relax, .zen_yoga_studio_relax h6 , .zen_yoga_studio_relax h2, .commas_pic{

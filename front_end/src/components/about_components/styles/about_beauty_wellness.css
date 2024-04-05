@@ -15,15 +15,21 @@
 .beauty, .wellness, .lessons {
     text-align: center;
     padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
 
 .beauty p, .wellness p, .lessons p {
     color: #62615C;
     line-height: 25px;
+    width: 85%;
 }
 
 .beauty h4, .wellness h4, .lessons h4 {
-    font-size: 1.3rem;
+    font-size: calc(1rem + 1vw);
     font-family: 'Merriweather';
 }
 
@@ -31,6 +37,12 @@
     .beauty_wellness_container {
         display: flex;
         flex-direction: column;
-        height: calc(100vh + 110vw);
+        height: calc(120vh + 10vw);
+    }
+}
+
+@media only screen and (max-width:350px){
+    .beauty_wellness_container {
+    min-height: 180vh;
     }
 }

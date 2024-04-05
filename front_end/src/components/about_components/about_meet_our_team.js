@@ -5,15 +5,15 @@ export default function AboutMeetOurTeam() {
     return (
         <div className="about_meet_our_team">
             <div className="about_meet_our_team_top">
-                <h2>Meet Our Team</h2>
-                <p>Our dedicated team at Zen Yoga Studio is at the heart of our mission to create a nurturing and transformative yoga experience for our community.</p>
+                <h2>Մեր Հրահանգիչները</h2>
+                <p>Zen Yoga Studio-ի մեր նվիրված թիմը մեր համայնքի համար սնուցող և փոխակերպող յոգայի փորձ է ստեղծում:</p>
 
             </div>
             <div className="about_meet_our_team_teachers">
                 <div className="about_meet_our_team_first_teacher">
                     <AboutOurTeamPictures pic="1"
-                        name="Joan Alexandra"
-                        bio="With a background in Hatha and mindfulness practices, Joan brings a calm and soothing presence to her classes, focusing on alignment and breath to help students find balance and serenity."
+                        name="Մարիա Հարությունյան"
+                        bio="Ունենալով Հաթայի և գիտակցության պրակտիկաների փորձ՝ Մարիան հանգստացնող միջավայր է ստեղծում իր դասերին։"
                         instagram_path="https://www.instagram.com/"
                         facebook_path="https://www.facebook.com/"
                         twitter_path="https://twitter.com/?lang=en"
@@ -22,8 +22,8 @@ export default function AboutMeetOurTeam() {
 
                 <div className="about_meet_our_team_second_teacher">
                 <AboutOurTeamPictures pic="2"
-                        name="Emily Johansson"
-                        bio="A Vinyasa enthusiast, Emily's classes are dynamic and invigorating, encouraging students to push their boundaries and explore their inner strength while maintaining a mindful connection."
+                        name="Էմիլի Նազարյան"
+                        bio="Որպես Վինյասայի մասնագետ՝ Էմիլիի դասերը դինամիկ են՝ խրախուսելով ուսանողներին ուսումնասիրել իրենց ներքին ուժը:"
                         instagram_path="https://www.instagram.com/"
                         facebook_path="https://www.facebook.com/"
                         twitter_path="https://twitter.com/?lang=en"
@@ -33,8 +33,8 @@ export default function AboutMeetOurTeam() {
 
                 <div className="about_meet_our_team_third_teacher">
                 <AboutOurTeamPictures pic="3"
-                        name="Laura Kyle"
-                        bio="Specializing in Kundalini yoga,Laura guides students on a spiritually enriching journey, tapping into the powerful energy within and helping them discover a deeper sense of self and purpose."
+                        name="Լաուրա Սարգսյան"
+                        bio="Մասնագիտանալով Կունդալինի յոգայում՝ Լաուրան ուղղորդում է ուսանողներին հոգևոր ճամփորդության մեջ՝օգնելով նրանց բացահայտել սեփական անձը:"
                         instagram_path="https://www.instagram.com/"
                         facebook_path="https://www.facebook.com/"
                         twitter_path="https://twitter.com/?lang=en"

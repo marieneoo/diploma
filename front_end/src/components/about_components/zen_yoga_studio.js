@@ -8,7 +8,7 @@ export default function ZenYogaStudio() {
         <div className="zen_yoga_studio">
             <div className="zen_yoga_studio_relax">
                 <h6>ZEN YOGA STUDIO</h6>
-                <h2>Մեզ կարող եք հանգստանալ և վայելել կյանքը</h2>
+                <h2>Մեզ մոտ կարող եք հանգստանա</h2>
                 <img src={commas_pic} className="commas_pic"></img>
                 <p>Ես կարող եմ միայն լավ բաներ ասել այս յոգայի ստուդիայի մասին: Այն պահից, երբ ես մտա ներս, ես ինձ հանգիստ զգացի: Հրահանգիչները ոչ միայն հմուտ են, այլև աներևակայելի կարեկցող:</p>
                 <div className="zen_yoga_studio_relax_profile">
