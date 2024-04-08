@@ -36,7 +36,7 @@ export default function Menu() {
           <Button id="menu_button" txt="ԳՐԱՆՑՎԵԼ ՀԻՄԱ" path="/contact" img="null" />
 
         </div>
-        <div style={{ display: "flex", flexDirection: "column" }} onClick={barOpening}>
+        <div className='menu_burger_container' style={{ flexDirection: "column" }} onClick={barOpening}>
           <div className="burger">
             <img className="burger_img" src={burger}></img>
           </div>
