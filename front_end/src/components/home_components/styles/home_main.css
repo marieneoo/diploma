@@ -88,5 +88,6 @@
         .home_main_text_container{
             justify-self: end;
             align-self: end;
+            padding-bottom: 15%;
         }
     }

@@ -28,3 +28,12 @@
     font-family: 'Merriweather';
     font-size: calc(2rem + 3vw);
 }
+
+@media only screen and (max-width: 450px){
+    .about_know_more_txt {
+        justify-content: end;
+        align-items: center;
+        padding-bottom: 20%;
+    }
+    
+}
