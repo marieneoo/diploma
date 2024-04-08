@@ -73,6 +73,11 @@
     color: black;
     transition: 0.5s;
 
+
+}
+
+.burger_bar{
+    display: none;
 }
 
 .burger {
@@ -121,6 +126,34 @@
         width: 25px;
         height: 25px;
         margin: 26px 0;
+
+    }
+
+    .burger_bar ul {
+        width: 120px;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        padding-left: 10px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        backdrop-filter:blur(5px);
+        background-color: #ffffff36;
+        box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.111);
+    }
+
+    .burger_bar ul li a{
+        text-decoration: none;
+        font-family: 'MerriWeather';      
+        text-align: left;
+        font-size: calc(0.7rem + 1vw);
+        color: white;
+    }
+
+    .burger_bar ul li {
+        list-style: none;
 
     }
 

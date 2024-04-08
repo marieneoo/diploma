@@ -44,11 +44,11 @@ export default function Menu() {
       </div>
       {barOpen && <div className="burger_bar">
         <ul>
-          <li><NavLink to="/home">HOME</NavLink></li>
-          <li><NavLink to="/about">ABOUT</NavLink></li>
-          <li><NavLink to="/classes">CLASSES</NavLink></li>
-          <li><NavLink to="/contact">CONTACT</NavLink></li>
-          <li><NavLink to="/spa">SPA</NavLink></li>
+          <li><NavLink to="/home">ԳԼԽԱՎՈՐ</NavLink></li>
+          <li><NavLink to="/about">ՄԵՐ ՄԱՍԻՆ</NavLink></li>
+          <li><NavLink to="/classes">ԴԱՍԵՐ</NavLink></li>
+          <li><NavLink to="/contact">ԿԱՊ</NavLink></li>
+          <li><NavLink to="/spa">ՍՊԱ</NavLink></li>
         </ul>
       </div>
       }
