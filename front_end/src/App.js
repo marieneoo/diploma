@@ -16,24 +16,28 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Menu/>
-      <Routes>
-        <Route index element={<Home/>}></Route>
-        <Route path="/home" element={<Home/>}></Route>
-        <Route path="/about" element={<About/>}></Route>
-        <Route path="/classes" element={<Classes/>}></Route>
-        <Route path="/contact" element={<Contact/>}></Route>
-        <Route path="/spa" element={<Spa/>}></Route>
-        <Route path="/sign_in" element={<SignIn/>}></Route>
-        <Route path="/sign_up" element={<SignUp/>}></Route>
-        <Route path="/forgot_password" element={<ForgPass/>}></Route>
-      </Routes>
-      <Footer/>
+        <Menu />
+        <Routes>
+          <Route index element={<Home />}></Route>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/classes" element={<Classes />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/spa" element={<Spa />}></Route>
+          <Route path="/login" element={<SignIn />}></Route>
+          <Route path="/sign_up" element={<SignUp />}></Route>
+          <Route path="/forgot_password" element={<ForgPass />}></Route>
+        </Routes>
+          <Footer />
+        
+        
       </Router>
-    
-     
+
+
     </div>
   );
+
+
 }
 
 export default App;
