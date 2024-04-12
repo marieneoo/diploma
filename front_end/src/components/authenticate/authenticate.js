@@ -8,13 +8,14 @@ function FormSignIn() {
     const [user, setUser] = useState({
         mail: '',
         password: ''
-    })
+    }) //sarqel enq state user-i state-i hamar, vory uni fielder
 
     const handleChange = (event) => {
         let name = event.target.name
-        let value = event.target.value
+        let value = event.target.value//vercnum enq html-i konkret input-i value
+        //state-y update enq anum nor input-i valuenerov
         setUser({ ...user, [name]: value })
-    }
+    } 
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -36,7 +37,7 @@ function FormSignIn() {
 
         }
         catch (error) {
-            console.log('error')
+            console.log(error)
         }
 
     }
@@ -60,14 +61,46 @@ function FormSignIn() {
 
 
 function FormSignUp() {
+    const navigate=useNavigate()
+    const [user,setUser]=useState({
+        name: '',
+        mail: '',
+        password: ''
+    })
+    const handleInput=(event)=>{
+        let name=event.target.name
+        let value=event.target.value
+        setUser({...user,[name]:value})
+    }
+    const handleSubmit=async (event)=> {
+        event.preventDefault();
+        const {name,mail,password}=user;
+        try{
+            const res = await fetch('/register',{
+                method: "POST",
+                headers: { 'Content-type': 'application/json' },
+                body: JSON.stringify({name,mail, password})
+            })
+            if(res.status==400 || !res) {
+                console.log('already used details')
+            }
+            else {
+                console.log('registered successfully')
+                navigate('/login')
+            }
+        }catch(error) {
+            console.log(error)
+        }
+
+    }
     return (
         <div className='authenticate_container'>
             <div className="form_container_sign_up">
-                <form className="form">
+                <form onSubmit={handleSubmit} method='POST' className="form">
                     <h3>Գրանցվել</h3>
-                    <Input type="text" txt="Անուն" />
-                    <Input type="email" txt="Էլ․հասցե" />
-                    <Input type="password" txt="Գաղտնաբառ" />
+                    <Input name='name' value={user.name} onChange={handleInput} type="text" txt="Անուն" />
+                    <Input name='mail' value={user.mail} onChange={handleInput} type="email" txt="Էլ․հասցե" />
+                    <Input name='password' value={user.password} onChange={handleInput} type="password" txt="Գաղտնաբառ" />
                     <Input type="password" txt="Կրկնել գաղտնաբառը" />
                     <button type="submit" class="btn btn-secondary btn-sm">Գրանցվել</button>
                     <NavLink to="/sign_in"><h6 className='form_navlinks'>Ունե՞ք հաշիվ</h6></NavLink>
