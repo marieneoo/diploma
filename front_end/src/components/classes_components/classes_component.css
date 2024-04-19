@@ -1,0 +1,56 @@
+.classes_component{
+    padding-top: 77px;  
+    padding-left: 3%;
+    padding-right: 1%;
+    background-color: #C5B5AB; 
+    background-image: url("../../assets/images/Classes/Pattern.svg");
+    background-position: 0 120px !important;
+    height: 580vh;
+    width: 100%;
+}
+
+p,h2,li {
+    color: white;
+    font-family: 'MerriWeather';
+}
+
+.classes_component_youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.classes_component_texts h2 {
+    font-size: calc(1rem + 2.5vw);
+}
+
+.classes_component_texts  p {
+    font-size: calc(1rem + 0.1vw);
+}
+
+.classes_component_about_video_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.classes_component_about_video_info div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.classes_component_about_video_info div img {
+    width: 70%;
+}
+
+.classes_component_about_video_info div p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}

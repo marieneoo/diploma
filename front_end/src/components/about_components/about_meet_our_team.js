@@ -33,7 +33,7 @@ export default function AboutMeetOurTeam() {
 
                 <div className="about_meet_our_team_third_teacher">
                 <AboutOurTeamPictures pic="3"
-                        name="Լաուրա Սարգսյան"
+                        name="Ադրիեն Սարգսյան"
                         bio="Մասնագիտանալով Կունդալինի յոգայում՝ Լաուրան ուղղորդում է ուսանողներին հոգևոր ճամփորդության մեջ՝օգնելով նրանց բացահայտել սեփական անձը:"
                         instagram_path="https://www.instagram.com/"
                         facebook_path="https://www.facebook.com/"

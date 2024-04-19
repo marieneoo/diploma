@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/home.js';
 import About from './pages/about/about.js';
-import Classes from './pages/classes.js';
+import Classes from './pages/classes/classes.js';
 import Contact from './pages/contact.js';
 import Spa from './pages/spa.js';
 import Menu from './components/menu/index.js';
@@ -25,7 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/spa" element={<Spa />}></Route>
           <Route path="/login" element={<SignIn />}></Route>
-          <Route path="/sign_up" element={<SignUp />}></Route>
+          <Route path="/register" element={<SignUp />}></Route>
           <Route path="/forgot_password" element={<ForgPass />}></Route>
         </Routes>
           <Footer />

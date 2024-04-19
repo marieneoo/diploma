@@ -16,6 +16,7 @@
     background-image: url("../../assets/images/authentication/h2o_pic.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .form_container_sign_in, .form_container_sign_up, .form_container_forg_pass{
@@ -52,5 +53,15 @@
     color: black;
     cursor: pointer;
     margin-bottom: 0;
+}
+
+@media only screen and (max-width:800px) {
+    .authenticate{
+        display: flex;
+    }
+
+    .form_container_sign_in, .form_container_sign_up, .form_container_forg_pass{
+        min-width: 250px;
+    }
 }
 

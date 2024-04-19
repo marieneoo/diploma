@@ -50,7 +50,7 @@ function FormSignIn() {
                     <Input name="mail" value={user.mail} onChange={handleChange} type="email" txt="Էլ․հասցե" />
                     <Input name="password" value={user.password} onChange={handleChange} type="password" txt="Գաղտնաբառ" />
                     <button type="submit" class="btn btn-secondary btn-sm">Մուտք Գործել</button>
-                    <NavLink to="/sign_up"><h6 className='form_navlinks'>Գրանցված չե՞ք</h6></NavLink>
+                    <NavLink to="/register"><h6 className='form_navlinks'>Գրանցված չե՞ք</h6></NavLink>
                     <NavLink to="/forgot_password"><h6 className='form_navlinks'>Մոռացե՞լ եք գաղտնաբառը</h6></NavLink>
                 </form>
             </div>
@@ -62,10 +62,12 @@ function FormSignIn() {
 
 function FormSignUp() {
     const navigate=useNavigate()
+    const [passError, setPassError] = useState(false)
     const [user,setUser]=useState({
         name: '',
         mail: '',
-        password: ''
+        password: '',
+        check_password: ''
     })
     const handleInput=(event)=>{
         let name=event.target.name
@@ -74,23 +76,31 @@ function FormSignUp() {
     }
     const handleSubmit=async (event)=> {
         event.preventDefault();
-        const {name,mail,password}=user;
-        try{
-            const res = await fetch('/register',{
-                method: "POST",
-                headers: { 'Content-type': 'application/json' },
-                body: JSON.stringify({name,mail, password})
-            })
-            if(res.status==400 || !res) {
-                console.log('already used details')
+        const {name,mail,password, check_password}=user; 
+        if(password === check_password){
+            setPassError(password.length < 8)
+            try{
+                const res = await fetch('/register',{
+                    method: "POST",
+                    headers: { 'Content-type': 'application/json' },
+                    body: JSON.stringify({name,mail, password})
+                })
+                if(res.status==400 || !res) {
+                    console.log('already used details')
+                }
+                else {
+                    console.log('registered successfully')
+                    navigate('/login')
+                }
+    
+            }catch(error) {
+                console.log(error)
             }
-            else {
-                console.log('registered successfully')
-                navigate('/login')
-            }
-        }catch(error) {
-            console.log(error)
+
+        }else {
+            console.log('passwords are not matching')
         }
+       
 
     }
     return (
@@ -101,9 +111,10 @@ function FormSignUp() {
                     <Input name='name' value={user.name} onChange={handleInput} type="text" txt="Անուն" />
                     <Input name='mail' value={user.mail} onChange={handleInput} type="email" txt="Էլ․հասցե" />
                     <Input name='password' value={user.password} onChange={handleInput} type="password" txt="Գաղտնաբառ" />
-                    <Input type="password" txt="Կրկնել գաղտնաբառը" />
+                    {passError && <p>8ic cacra</p>}
+                    <Input name='check_password' value={user.check_password} onChange={handleInput} type="password" txt="Կրկնել գաղտնաբառը" />
                     <button type="submit" class="btn btn-secondary btn-sm">Գրանցվել</button>
-                    <NavLink to="/sign_in"><h6 className='form_navlinks'>Ունե՞ք հաշիվ</h6></NavLink>
+                    <NavLink to="/login"><h6 className='form_navlinks'>Ունե՞ք հաշիվ</h6></NavLink>
                 </form>
             </div>
         </div>
@@ -117,7 +128,7 @@ function FormForgPass() {
                 <form className="form">
                     <h3>Մոռացե՞լ եք Ձեր գաղտնաբառը</h3>
                     <Input type="email" txt="Էլ․հասցե" />
-                    <NavLink to="/sign_in"><h6 className='form_navlinks'>Մուտք գործել</h6></NavLink>
+                    <NavLink to="/login"><h6 className='form_navlinks'>Մուտք գործել</h6></NavLink>
                 </form>
             </div>
         </div>
