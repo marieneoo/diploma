@@ -5,11 +5,19 @@
     background-color: #C5B5AB; 
     background-image: url("../../assets/images/Classes/Pattern.svg");
     background-position: 0 120px !important;
-    height: 580vh;
+    height: calc(200vh + 170vw);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-p,h2,li {
+.classes_component_texts {
+    padding-top: 2%;
+}
+
+.classes_component p, .classes_component h2 {
     color: white;
     font-family: 'MerriWeather';
 }
@@ -18,6 +26,8 @@ p,h2,li {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    height: 18%;
 }
 
 .classes_component_texts h2 {
@@ -53,4 +63,47 @@ p,h2,li {
     justify-content: center;
     text-align: center;
     
+}
+
+
+@media only screen and (max-width:600px) {
+    .classes_component_youtube {
+        height: 5%;
+    }
+
+    .classes_component_texts {
+        padding-top: 0;
+    }
+    
+    .classes_component_texts  p {
+        font-size: calc(0.7rem + 0.1vw);
+    }
+
+    .classes_component {
+       height: calc(200vh + 200vw);
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .classes_component {
+        height: calc(550vh - 350vw);
+     }
+}
+
+@media only screen and (max-width:250px) {
+    .classes_component {
+        height: calc(550vh - 400vw);
+     }
+}
+
+@media only screen and (max-width:200px) {
+    .classes_component {
+        height: calc(550vh - 310vw);
+     }
+}
+
+@media only screen and (max-width:160px) {
+    .classes_component {
+        min-height: 500vh;
+     }
 }

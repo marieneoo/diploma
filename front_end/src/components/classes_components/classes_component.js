@@ -15,8 +15,8 @@ export default function ClassesComponent() {
 
             <div className="classes_component_youtube">
             <iframe
-                    width="1200"
-                    height="600"
+                    width="90%"
+                    height="80%"
                     src="https://www.youtube.com/embed/j7rKKpwdXNE"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
