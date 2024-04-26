@@ -65,6 +65,11 @@
     
 }
 
+@media only screen and (max-width:800px) {
+    .classes_component {
+        height: calc(200vh + 270vw);
+     }
+} 
 
 @media only screen and (max-width:600px) {
     .classes_component_youtube {
@@ -80,30 +85,30 @@
     }
 
     .classes_component {
-       height: calc(200vh + 200vw);
+       height: calc(200vh + 250vw);
     }
 }
 
 @media only screen and (max-width:400px) {
     .classes_component {
-        height: calc(550vh - 350vw);
+        height: calc(550vh - 250vw);
      }
 }
 
 @media only screen and (max-width:250px) {
     .classes_component {
-        height: calc(550vh - 400vw);
+        height: calc(550vh - 110vw);
      }
 }
 
 @media only screen and (max-width:200px) {
     .classes_component {
-        height: calc(550vh - 310vw);
+        height: calc(550vh - 110vw);
      }
 }
 
 @media only screen and (max-width:160px) {
     .classes_component {
-        min-height: 500vh;
+        min-height: 550vh;
      }
 }
