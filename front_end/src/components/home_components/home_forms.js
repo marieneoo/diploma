@@ -5,6 +5,17 @@ import clock_icon from "../../assets/images/home/clock_icon.svg"
 import location_icon from "../../assets/images/home/location_icon.svg"
 import store_icon from "../../assets/images/home/store_icon.svg"
 export default function HomeForms() {
+    const [email, setEmail] = useState({
+        mail: '',
+        text: ''
+    }) //sarqel enq state user-i state-i hamar, vory uni fielder
+
+    const handleChange = (event) => {
+        let name = event.target.name
+        let value = event.target.value//vercnum enq html-i konkret input-i value
+        //state-y update enq anum nor input-i valuenerov
+        setUser({ ...user, [name]: value })
+    } 
     return (
         <div className="home_forms">
             <div className="home_make_an_appointment">
@@ -54,17 +65,17 @@ export default function HomeForms() {
                 <div className="home_forms_inputs">
                     <div className="home_forms_name_input">
                     <h5>Անուն <p>*</p></h5>
-                    <input type="text" required></input>
+                    <input type="text" value={emailName} required></input>
                     </div>
                     
                     <div className="home_forms_email_input">
                     <h5>Էլ․հասցե <p>*</p></h5>
-                    <input type="mail" required></input>
+                    <input type="mail" value={emailMail} required></input>
                     </div>
                     
                     <div className="home_forms_number_input">
                     <h5>Հեռախոսահամար <p>*</p></h5>
-                    <input type="number" required></input>
+                    <input type="number" value={emailPhoneNumber} required></input>
                     </div>
 
                     <Button txt="50% ԶԵՂՉ ՄԻԱՅՆ ԱՅՍՕՐ" id="home_form_button" path="/contact" color="black" img="none" />
