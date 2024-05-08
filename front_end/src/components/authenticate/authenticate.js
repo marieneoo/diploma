@@ -63,6 +63,7 @@ function FormSignIn() {
 function FormSignUp() {
     const navigate=useNavigate()
     const [passError, setPassError] = useState(false)
+    const [matchPass, setMatchPass] = useState(false)
     const [user,setUser]=useState({
         name: '',
         mail: '',
@@ -70,6 +71,19 @@ function FormSignUp() {
         check_password: ''
     })
     const handleInput=(event)=>{
+        const {password, check_password}=user; 
+        console.log(password.length)
+        console.log(check_password == password)
+        if(password == null || password == 0 || check_password == password){
+            setPassError(false)
+            setMatchPass(true)
+        }else if (password.length >=8 || check_password == password){
+            setPassError(false)
+            setMatchPass(false)
+        }else{
+            setPassError(true)
+            
+        }
         let name=event.target.name
         let value=event.target.value
         setUser({...user,[name]:value})
@@ -77,8 +91,8 @@ function FormSignUp() {
     const handleSubmit=async (event)=> {
         event.preventDefault();
         const {name,mail,password, check_password}=user; 
-        if(password === check_password){
-            setPassError(password.length < 8)
+        if(password === check_password && password.length <= 8 ){
+            setPassError(false)
             try{
                 const res = await fetch('/register',{
                     method: "POST",
@@ -111,8 +125,9 @@ function FormSignUp() {
                     <Input name='name' value={user.name} onChange={handleInput} type="text" txt="Անուն" />
                     <Input name='mail' value={user.mail} onChange={handleInput} type="email" txt="Էլ․հասցե" />
                     <Input name='password' value={user.password} onChange={handleInput} type="password" txt="Գաղտնաբառ" />
-                    {passError && <p>8ic cacra</p>}
+                    {passError && <p>8 նիշից ցածր ա</p>}
                     <Input name='check_password' value={user.check_password} onChange={handleInput} type="password" txt="Կրկնել գաղտնաբառը" />
+                    {matchPass && <p>Գաղտնաբառերը չեն համընկնում</p>}
                     <button type="submit" class="btn btn-secondary btn-sm">Գրանցվել</button>
                     <NavLink to="/login"><h6 className='form_navlinks'>Ունե՞ք հաշիվ</h6></NavLink>
                 </form>

@@ -16,7 +16,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Menu />
+      <Menu/>
+
         <Routes>
           <Route index element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
@@ -28,12 +29,12 @@ function App() {
           <Route path="/register" element={<SignUp />}></Route>
           <Route path="/forgot_password" element={<ForgPass />}></Route>
         </Routes>
-          <Footer />
+        <Footer/>
         
         
       </Router>
 
-
+    
     </div>
   );
 
