@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    
+
 }
 
 .home_reviews_container {
@@ -13,7 +13,7 @@
     height: 65vh;
     display: grid;
     grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: 1fr;   
+    grid-template-columns: 1fr;
 }
 
 .home_commas_pic {
@@ -72,8 +72,9 @@
     .home_reviews {
         height: calc(110vh + 10vw);
     }
-    .home_reviews_container{
-        display:flex;
+
+    .home_reviews_container {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;

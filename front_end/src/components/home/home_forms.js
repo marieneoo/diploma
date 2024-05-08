@@ -1,6 +1,6 @@
 import React from 'react';
 import "./styles/home_forms.css"
-import Button from "../main_elements/button/button.js"
+import Button from "../button/button.js"
 import clock_icon from "../../assets/images/home/clock_icon.svg"
 import location_icon from "../../assets/images/home/location_icon.svg"
 import store_icon from "../../assets/images/home/store_icon.svg"
@@ -36,54 +36,54 @@ export default function HomeForms() {
                     </div>
 
                     <div className="home_clock_store">
-                        
-                    <div className="home_opening_hours">
-                        <div className="home_opening_hours_icon">
-                        <img src={clock_icon} className="home_clock_icon"></img>
-                            <h6>ԱՇԽԱՏՔԱՅԻՆ ԺԱՄԵՐԸ</h6>
+
+                        <div className="home_opening_hours">
+                            <div className="home_opening_hours_icon">
+                                <img src={clock_icon} className="home_clock_icon"></img>
+                                <h6>ԱՇԽԱՏՔԱՅԻՆ ԺԱՄԵՐԸ</h6>
+                            </div>
+
+                            <p>Երկուշաբթի-ՈՒրբաթ: 6։00-22։00</p>
+                            <p>Շաբաթ-Կիրակի: 6։00-20։00</p>
                         </div>
 
-                        <p>Երկուշաբթի-ՈՒրբաթ: 6։00-22։00</p>
-                        <p>Շաբաթ-Կիրակի: 6։00-20։00</p>
-                    </div>
+                        <div className="home_contact">
+                            <div className="home_contact_icon">
+                                <img src={store_icon} className="home_store_icon"></img>
+                                <h6>ԿԱՊ ՄԵԶ ՀԵՏ</h6>
+                            </div>
 
-                    <div className="home_contact">
-                        <div className="home_contact_icon">
-                        <img src={store_icon} className="home_store_icon"></img>
-                            <h6>ԿԱՊ ՄԵԶ ՀԵՏ</h6>
+                            <p>Հեռ․՝ +37433344699</p>
+                            <p>Էլ․հասցե՝ zenyogastudio@gmail.com</p>
                         </div>
-
-                        <p>Հեռ․՝ +37433344699</p>
-                        <p>Էլ․հասցե՝ zenyogastudio@gmail.com</p>
-                    </div>
                     </div>
 
 
                 </div>
-                </div>
+            </div>
 
-                <div className="home_forms_inputs">
-                    <div className="home_forms_name_input">
+            <div className="home_forms_inputs">
+                <div className="home_forms_name_input">
                     <h5>Անուն <p>*</p></h5>
                     <input type="text" required></input>
-                    </div>
-                    
-                    <div className="home_forms_email_input">
-                    <h5>Էլ․հասցե <p>*</p></h5>
-                    <input type="mail" required></input>
-                    </div>
-                    
-                    <div className="home_forms_number_input">
-                    <h5>Հեռախոսահամար <p>*</p></h5>
-                    <input type="number" required></input>
-                    </div>
-
-                    <Button txt="50% ԶԵՂՉ ՄԻԱՅՆ ԱՅՍՕՐ" id="home_form_button" path="/contact" color="black" img="none" />
-
                 </div>
 
+                <div className="home_forms_email_input">
+                    <h5>Էլ․հասցե <p>*</p></h5>
+                    <input type="mail" required></input>
+                </div>
 
+                <div className="home_forms_number_input">
+                    <h5>Հեռախոսահամար <p>*</p></h5>
+                    <input type="number" required></input>
+                </div>
+
+                <Button txt="50% ԶԵՂՉ ՄԻԱՅՆ ԱՅՍՕՐ" id="home_form_button" path="/contact" color="black" img="none" />
 
             </div>
-            )
+
+
+
+        </div>
+    )
 }

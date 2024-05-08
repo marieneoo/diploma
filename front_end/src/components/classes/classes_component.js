@@ -1,11 +1,11 @@
 import React from "react";
 import "./classes_component.css"
-import downward_dog from '../../assets/images/Classes/downward_dog.jpg'
-import cat_cow from '../../assets/images/Classes/cat_cow.jpg'
-import seated_crossed from '../../assets/images/Classes/seated_crossed.jpg'
-import childs_pose from '../../assets/images/Classes/childs_pose.jpg'
+import downward_dog from '../../assets/images/classes/downward_dog.jpg'
+import cat_cow from '../../assets/images/classes/cat_cow.jpg'
+import seated_crossed from '../../assets/images/classes/seated_crossed.jpg'
+import childs_pose from '../../assets/images/classes/childs_pose.jpg'
 export default function ClassesComponent() {
-    return(
+    return (
         <div className="classes_component">
             <div className="classes_component_texts">
                 <h2>Անվճար Յոգայի Դաս</h2>
@@ -14,7 +14,7 @@ export default function ClassesComponent() {
             </div>
 
             <div className="classes_component_youtube">
-            <iframe
+                <iframe
                     width="90%"
                     height="80%"
                     src="https://www.youtube.com/embed/j7rKKpwdXNE"
@@ -37,26 +37,26 @@ export default function ClassesComponent() {
 
                     <div className="classes_component_about_video_info_2">
                         <h2>Downward Dog position</h2>
-                        <p>Սա յոգայի դիրք է, որտեղ դուք սկսում եք հատակին՝ հենվելով ձեռքերի և ծնկների վրա, այնուհետև բարձրացնում եք ձեր կոնքերը վերև և տանւմ եք հետ՝ ստեղծելով շրջված V տառը: Ձեռքերը բացված են ուսերի լայնությամբ, ոտքերը՝ ազդրերի լայնությամբ, և դուք սեղմում եք ձեր ափերը գորգի վրա՝ հետագայում ձգտելով ուղղել ձեր ձեռքերն ու ոտքերը: Այն հիանալի ձգում է մեջքի, մկանների, սրունքների և ուսերի համար, որը հաճախ օգտագործվում է որպես յոգայի հաջորդականության մաս՝ ճկունության համար:</p> 
-        
+                        <p>Սա յոգայի դիրք է, որտեղ դուք սկսում եք հատակին՝ հենվելով ձեռքերի և ծնկների վրա, այնուհետև բարձրացնում եք ձեր կոնքերը վերև և տանւմ եք հետ՝ ստեղծելով շրջված V տառը: Ձեռքերը բացված են ուսերի լայնությամբ, ոտքերը՝ ազդրերի լայնությամբ, և դուք սեղմում եք ձեր ափերը գորգի վրա՝ հետագայում ձգտելով ուղղել ձեր ձեռքերն ու ոտքերը: Այն հիանալի ձգում է մեջքի, մկանների, սրունքների և ուսերի համար, որը հաճախ օգտագործվում է որպես յոգայի հաջորդականության մաս՝ ճկունության համար:</p>
+
                         <img src={downward_dog}></img>
                     </div>
 
                     <div className="classes_component_about_video_info_3">
                         <h2>Cat-cow pose</h2>
                         <p>Կատու-կովի դիրքը դինամիկ յոգայի հաջորդականություն է, որը միավորում է երկու փոխլրացնող շարժումներ՝ խթանելու ողնաշարի ճկունությունն ու շարժունակությունը: Սկսեք սեղանի դիրքից չեզոք ողնաշարով: Շնչեք, երբ ձեր մեջքը թեքված է, որովայնն իջեցրեք հատակին և ձեր հայացքը բարձրացրեք առաստաղին (Կովի դիրք): Արտաշնչեք, կլորացրնեք ձեր ողնաշարը, կզակը սեղմելով դեպի կրծքավանդակը և ձեր որովայնը ձգելով դեպի ողնաշարը (կատվի դիրք): Այս երկու դիրքերի միջև շնչառությամբ հոսելը խթանում է ողնաշարի հոդակապումը, ազատում է լարվածությունը մեջքի և պարանոցի մեջ և խթանում շրջանառությունը ամբողջ մարմնում:
-</p>
+                        </p>
                         <img src={cat_cow}></img>
                     </div>
 
                     <div className="classes_component_about_video_info_4">
                         <h2>Extended child's pose</h2>
                         <p>Երեխայի դիրքը, որը նաև հայտնի է որպես Բալասանա, մեղմ հանգստի դիրք է, որը նպաստում է թուլացմանը և ներդաշնակությանը: Սկսեք սեղանի դիրքից, այնուհետև ձեր ազդրերը իջեցրեք դեպի կրունկները, մինչ ձեր ձեռքերը առաջ եք մեկնում, ափերը հենվում են գետնին: Հենեք ձեր ճակատը գորգի վրա, թույլ տալով, որ ձեր կրծքավանդակը կպնի հատակին: Այս կեցվածքը ձգում է ողնաշարը, և ազդրերը՝ ազատելով լարվածությունից և հոգնածությունից։ Այն ապահովում է սնուցող տարածք խորը շնչառության և մտավոր հանգստի համար՝ այն դարձնելով իդեալական
-վերականգնողական պրակտիկա կամ որպես հանգստացնող անցում ավելի ակտիվ դիրքերի միջև:
-</p>
+                            վերականգնողական պրակտիկա կամ որպես հանգստացնող անցում ավելի ակտիվ դիրքերի միջև:
+                        </p>
                         <img src={childs_pose}></img>
                     </div>
-                    
+
 
                 </div>
 
@@ -64,5 +64,5 @@ export default function ClassesComponent() {
 
 
         </div>
-    )   
+    )
 }

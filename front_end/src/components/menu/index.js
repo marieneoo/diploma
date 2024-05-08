@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import "./styles/menu.css"
-import instagram from "../../assets/images/instagram.svg"
-import facebook from "../../assets/images/facebook.svg"
 import { NavLink } from "react-router-dom"
-import lotus from "../../assets/images/lotus_logo.svg"
-import burger from "../../assets/images/burger.svg"
-import Button from "../main_elements/button/button.js"
+import "./styles/menu.css"
+import instagram from "../../assets/images/main/instagram.svg"
+import facebook from "../../assets/images/main/facebook.svg"
+import lotus from "../../assets/images/main/lotus_logo.svg"
+import burger from "../../assets/images/main/burger.svg"
+import Button from "../button/button.js"
 
 
 export default function Menu() {

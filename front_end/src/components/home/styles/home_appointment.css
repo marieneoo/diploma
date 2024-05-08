@@ -10,10 +10,10 @@
 .home_appointment_container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
     height: 50vh;
     width: 80%;
-    
+
 }
 
 .home_appointment_container h6 {
@@ -24,7 +24,7 @@
 }
 
 .home_appointment_container h1 {
-    
+
     padding-top: 3%;
     font-family: 'Merriweather';
     font-size: 50px;
@@ -58,10 +58,10 @@
         width: 80%;
     }
 
-    #book_an_appointment_btn{
+    #book_an_appointment_btn {
         width: 70vw;
     }
 
 
-    
+
 }

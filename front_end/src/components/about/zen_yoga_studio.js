@@ -15,8 +15,8 @@ export default function ZenYogaStudio() {
                     <img src={username_pic} className="username_pic"></img>
 
                     <div className="zen_yoga_studio_relax_profile_txt">
-                    <p>աննա մկրտչյան</p>
-                    <p>Ք․ Երևան</p>
+                        <p>աննա մկրտչյան</p>
+                        <p>Ք․ Երևան</p>
                     </div>
 
                 </div>

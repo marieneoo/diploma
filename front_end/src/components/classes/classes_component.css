@@ -1,9 +1,9 @@
-.classes_component{
-    padding-top: 77px;  
+.classes_component {
+    padding-top: 77px;
     padding-left: 3%;
     padding-right: 1%;
-    background-color: #C5B5AB; 
-    background-image: url("../../assets/images/Classes/Pattern.svg");
+    background-color: #C5B5AB;
+    background-image: url("../../assets/images/classes/Pattern.svg");
     background-position: 0 120px !important;
     height: calc(200vh + 170vw);
     width: 100%;
@@ -17,7 +17,8 @@
     padding-top: 2%;
 }
 
-.classes_component p, .classes_component h2 {
+.classes_component p,
+.classes_component h2 {
     color: white;
     font-family: 'MerriWeather';
 }
@@ -34,11 +35,11 @@
     font-size: calc(1rem + 2.5vw);
 }
 
-.classes_component_texts  p {
+.classes_component_texts p {
     font-size: calc(1rem + 0.1vw);
 }
 
-.classes_component_about_video_info{
+.classes_component_about_video_info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,14 +63,14 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    
+
 }
 
 @media only screen and (max-width:800px) {
     .classes_component {
         height: calc(200vh + 270vw);
-     }
-} 
+    }
+}
 
 @media only screen and (max-width:600px) {
     .classes_component_youtube {
@@ -79,36 +80,36 @@
     .classes_component_texts {
         padding-top: 0;
     }
-    
-    .classes_component_texts  p {
+
+    .classes_component_texts p {
         font-size: calc(0.7rem + 0.1vw);
     }
 
     .classes_component {
-       height: calc(200vh + 250vw);
+        height: calc(200vh + 250vw);
     }
 }
 
 @media only screen and (max-width:400px) {
     .classes_component {
         height: calc(550vh - 250vw);
-     }
+    }
 }
 
 @media only screen and (max-width:250px) {
     .classes_component {
         height: calc(550vh - 110vw);
-     }
+    }
 }
 
 @media only screen and (max-width:200px) {
     .classes_component {
         height: calc(550vh - 110vw);
-     }
+    }
 }
 
 @media only screen and (max-width:160px) {
     .classes_component {
         min-height: 550vh;
-     }
+    }
 }

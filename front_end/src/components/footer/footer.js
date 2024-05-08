@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink } from "react-router-dom"
 import "./footer.css"
-import instagram_pic from "../../assets/images/instagram.svg"
-import facebook_pic from "../../assets/images/facebook.svg"
-import twitter_pic from "../../assets/images/twitter_icon.svg"
-import lotus_pic from "../../assets/images/lotus_logo.svg"
+import instagram_pic from "../../assets/images/main/instagram.svg"
+import facebook_pic from "../../assets/images/main/facebook.svg"
+import twitter_pic from "../../assets/images/main/twitter_icon.svg"
+import lotus_pic from "../../assets/images/main/lotus_logo.svg"
 export default function Footer() {
     return (
         <div className="footer">

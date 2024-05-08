@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from "react-router-dom"
-import FormButton from './form_button.js'
 import Input from './input.js'
 
 
@@ -15,7 +14,7 @@ function FormSignIn() {
         let value = event.target.value//vercnum enq html-i konkret input-i value
         //state-y update enq anum nor input-i valuenerov
         setUser({ ...user, [name]: value })
-    } 
+    }
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -61,60 +60,60 @@ function FormSignIn() {
 
 
 function FormSignUp() {
-    const navigate=useNavigate()
+    const navigate = useNavigate()
     const [passError, setPassError] = useState(false)
     const [matchPass, setMatchPass] = useState(false)
-    const [user,setUser]=useState({
+    const [user, setUser] = useState({
         name: '',
         mail: '',
         password: '',
         check_password: ''
     })
-    const handleInput=(event)=>{
-        const {password, check_password}=user; 
+    const handleInput = (event) => {
+        const { password, check_password } = user;
         console.log(password.length)
         console.log(check_password == password)
-        if(password == null || password == 0 || check_password == password){
+        if (password == null || password == 0 || check_password == password) {
             setPassError(false)
             setMatchPass(true)
-        }else if (password.length >=8 || check_password == password){
+        } else if (password.length >= 8 || check_password == password) {
             setPassError(false)
             setMatchPass(false)
-        }else{
+        } else {
             setPassError(true)
-            
+
         }
-        let name=event.target.name
-        let value=event.target.value
-        setUser({...user,[name]:value})
+        let name = event.target.name
+        let value = event.target.value
+        setUser({ ...user, [name]: value })
     }
-    const handleSubmit=async (event)=> {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        const {name,mail,password, check_password}=user; 
-        if(password === check_password && password.length <= 8 ){
+        const { name, mail, password, check_password } = user;
+        if (password === check_password && password.length <= 8) {
             setPassError(false)
-            try{
-                const res = await fetch('/register',{
+            try {
+                const res = await fetch('/register', {
                     method: "POST",
                     headers: { 'Content-type': 'application/json' },
-                    body: JSON.stringify({name,mail, password})
+                    body: JSON.stringify({ name, mail, password })
                 })
-                if(res.status==400 || !res) {
+                if (res.status == 400 || !res) {
                     console.log('already used details')
                 }
                 else {
                     console.log('registered successfully')
                     navigate('/login')
                 }
-    
-            }catch(error) {
+
+            } catch (error) {
                 console.log(error)
             }
 
-        }else {
+        } else {
             console.log('passwords are not matching')
         }
-       
+
 
     }
     return (

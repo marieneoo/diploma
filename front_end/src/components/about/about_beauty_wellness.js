@@ -1,10 +1,10 @@
 import React from 'react';
 import "./styles/about_beauty_wellness.css"
-import lotus_pic from "../../assets/images/about/lotus_pic.svg"
+import lotus_pic from "../../assets/images/main/lotus_logo.svg"
 import hands_pic from "../../assets/images/about/hands_pic.png"
 import lessons_pic from "../../assets/images/about/lessons_pic.png"
 export default function BeautyWellness() {
-    return(
+    return (
         <div className="beauty_wellness_container">
             <div className="wellness">
                 <img src={lotus_pic} className="lotus_pic"></img>

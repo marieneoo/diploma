@@ -7,7 +7,6 @@ export default function AboutMeetOurTeam() {
             <div className="about_meet_our_team_top">
                 <h2>Մեր Հրահանգիչները</h2>
                 <p>Zen Yoga Studio-ի մեր նվիրված թիմը մեր համայնքի համար սնուցող և փոխակերպող յոգայի փորձ է ստեղծում:</p>
-
             </div>
             <div className="about_meet_our_team_teachers">
                 <div className="about_meet_our_team_first_teacher">
