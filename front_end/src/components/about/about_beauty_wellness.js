@@ -1,6 +1,6 @@
 import React from 'react';
 import "./styles/about_beauty_wellness.css"
-import lotus_pic from "../../assets/images/main/lotus_logo.svg"
+import lotus_pic from "../../assets/images/about/lotus_pic.svg"
 import hands_pic from "../../assets/images/about/hands_pic.png"
 import lessons_pic from "../../assets/images/about/lessons_pic.png"
 export default function BeautyWellness() {
