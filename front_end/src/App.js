@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/home.js';
 import About from './pages/about/about.js';
@@ -12,12 +12,22 @@ import SignUp from './pages/authenticate/sign_up.js';
 import ForgPass from './pages/authenticate/forg_pass.js';
 import './App.css';
 
+
 function App() {
+  const [display, setDisplay] = useState(true)
+  useEffect(() => {
+    if (window.location.pathname == "/login" || window.location.pathname == "/register" || window.location.pathname == "/forgot_password") {
+      setDisplay(false)
+    } else {
+      setDisplay(true)
+    }
+  }, [window.location.pathname])
+
+
   return (
     <div className="App">
       <Router>
-      <Menu/>
-
+        {display && <Menu />}
         <Routes>
           <Route index element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
@@ -29,12 +39,10 @@ function App() {
           <Route path="/register" element={<SignUp />}></Route>
           <Route path="/forgot_password" element={<ForgPass />}></Route>
         </Routes>
-        <Footer/>
-        
-        
+        {display && <Footer />}
       </Router>
 
-    
+
     </div>
   );
 
