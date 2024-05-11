@@ -1,19 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from "react-router-dom"
 import "./styles/menu.css"
+import Cookies from "js-cookie"
 import instagram from "../../assets/images/main/instagram.svg"
 import facebook from "../../assets/images/main/facebook.svg"
 import lotus from "../../assets/images/main/lotus_logo.svg"
 import burger from "../../assets/images/main/burger.svg"
 import Button from "../button/button.js"
+import user_icon from "../../../src/assets/images/main/user_icon.svg"
 
 
 export default function Menu() {
   const [barOpen, setBarOpen] = useState(false)
-
+  const [token, setToken] = useState(null)
   const barOpening = () => {
     setBarOpen(!barOpen)
   }
+  useEffect(()=>{
+    const tokenFromCookie = Cookies.get('auth')
+    if(tokenFromCookie){
+      setToken(tokenFromCookie)
+      console.log(token)
+      
+    }else{
+      console.log("token chka")
+    }
+  }, [])
 
   return (
     <div className="menu">
@@ -33,7 +45,8 @@ export default function Menu() {
           <img className="instagram_img" src={instagram}></img>
           <img className="facebook_img" src={facebook}></img>
 
-          <Button id="menu_button" txt="ԳՐԱՆՑՎԵԼ ՀԻՄԱ" path="/contact" img="null" />
+          {!token && <Button id="menu_button" txt="ԳՐԱՆՑՎԵԼ ՀԻՄԱ" path="/contact" img="null" />}
+          {token && <img className='user_icon' src={user_icon}></img>}
 
         </div>
         <div className='menu_burger_container' style={{ flexDirection: "column" }} onClick={barOpening}>

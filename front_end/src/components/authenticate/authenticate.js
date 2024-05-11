@@ -4,11 +4,12 @@ import Input from './input.js'
 
 
 function FormSignIn() {
+    const navigate = useNavigate()
     const [user, setUser] = useState({
         mail: '',
         password: ''
     }) //sarqel enq state user-i state-i hamar, vory uni fielder
-
+    
     const handleChange = (event) => {
         let name = event.target.name
         let value = event.target.value//vercnum enq html-i konkret input-i value
@@ -31,6 +32,7 @@ function FormSignIn() {
             }
 
             else {
+                navigate('/home')
                 console.log('logged in')
             }
 
@@ -48,7 +50,7 @@ function FormSignIn() {
                     <h3>Մուտք Գործել</h3>
                     <Input name="mail" value={user.mail} onChange={handleChange} type="email" txt="Էլ․հասցե" />
                     <Input name="password" value={user.password} onChange={handleChange} type="password" txt="Գաղտնաբառ" />
-                    <button type="submit" class="btn btn-secondary btn-sm">Մուտք Գործել</button>
+                    <button type="submit" className="btn btn-secondary btn-sm">Մուտք Գործել</button>
                     <NavLink to="/register"><h6 className='form_navlinks'>Գրանցված չե՞ք</h6></NavLink>
                     <NavLink to="/forgot_password"><h6 className='form_navlinks'>Մոռացե՞լ եք գաղտնաբառը</h6></NavLink>
                 </form>
@@ -127,7 +129,7 @@ function FormSignUp() {
                     {passError && <p>8 նիշից ցածր ա</p>}
                     <Input name='check_password' value={user.check_password} onChange={handleInput} type="password" txt="Կրկնել գաղտնաբառը" />
                     {matchPass && <p>Գաղտնաբառերը չեն համընկնում</p>}
-                    <button type="submit" class="btn btn-secondary btn-sm">Գրանցվել</button>
+                    <button type="submit" className="btn btn-secondary btn-sm">Գրանցվել</button>
                     <NavLink to="/login"><h6 className='form_navlinks'>Ունե՞ք հաշիվ</h6></NavLink>
                 </form>
             </div>
