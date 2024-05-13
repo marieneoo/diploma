@@ -92,6 +92,29 @@
 .user_icon {
     width: calc(15px + 1vw);
 }
+
+.log_out {
+    
+    height: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  
+}
+.log_out_container{
+width: 10%;
+margin-right: 3%;
+}
+
+.form-control {
+    background-color: #ffffff36;
+    
+}
+
+.log_out_icon {
+    width: 20px;
+    height: 20px;
+}
 @media only screen and (max-width: 550px) {
     .menu {
         display: flex;

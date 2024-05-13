@@ -20,11 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 app.use(cookieParser())
 
-app.get('/',(req,res)=>{
-    res.send("hello")
-} )
 
-//registration
 //registration
 app.post('/register', async (req, res) => {
     try {
@@ -61,7 +57,9 @@ app.post('/login', async (req, res) =>{
                     express: new Date(Date.now()+86400000),
                     httpOnly: true 
                 })
+                res.cookie('auth', token)
                 res.status(200).send("LoggedIn")
+                
             }else{
                 res.status(400).send("Invalid Credentials")
             }

@@ -23,6 +23,7 @@ function App() {
     }
   }, [window.location.pathname])
 
+  
 
   return (
     <div className="App">
