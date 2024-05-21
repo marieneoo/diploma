@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useInsertionEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/home.js';
 import About from './pages/about/about.js';
@@ -14,14 +14,17 @@ import './App.css';
 
 
 function App() {
+ 
   const [display, setDisplay] = useState(true)
-  useEffect(() => {
+ useInsertionEffect(() => {
     if (window.location.pathname == "/login" || window.location.pathname == "/register" || window.location.pathname == "/forgot_password") {
       setDisplay(false)
     } else {
       setDisplay(true)
     }
   }, [window.location.pathname])
+  console.log(display)
+
 
   
 

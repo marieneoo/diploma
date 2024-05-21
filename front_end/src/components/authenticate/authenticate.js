@@ -33,6 +33,7 @@ function FormSignIn() {
 
             else {
                 navigate('/home')
+                window.location.reload()
                 console.log('logged in')
             }
 
@@ -138,14 +139,50 @@ function FormSignUp() {
 }
 
 function FormForgPass() {
+    const navigate = useNavigate()
+    const [user, setUser] = useState({
+        mail: ''
+    })
+    
+    const handleChange = (event) => {
+        let name = event.target.name
+        let value = event.target.value
+        setUser({ ...user, [name]: value })
+    }
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        const {mail } = user
+        try {
+            const res = await fetch('/forgot_password', {
+                method: 'POST',
+                headers: { 'Content-type': 'application/json' },
+                body: JSON.stringify({ mail})
+            })
+
+            if (res.status == 400 || !res) {
+                console.log('incorrect details')
+            }
+
+            else {
+                navigate('/login')
+                console.log('namaky uxarkvec')
+            }
+
+        }
+        catch (error) {
+            console.log(error)
+        }
+
+    }
     return (
         <div className='authenticate_container'>
             <div className="form_container_forg_pass">
-                <form className="form">
+                <form onSubmit={handleSubmit} method="POST" className="form">
                     <h3>Մոռացե՞լ եք Ձեր գաղտնաբառը</h3>
-                    <Input type="email" txt="Էլ․հասցե" />
-                    <NavLink to="/login"><h6 className='form_navlinks'>Մուտք գործել</h6></NavLink>
-                </form>
+                    <Input name='mail' value={user.mail} onChange={handleChange} type="email" txt="Էլ․հասցե" />
+                    <button type="submit" className="btn btn-secondary btn-sm">Ուղարկել Նամակ</button>
+                    </form>
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { NavLink } from "react-router-dom"
+import React, { useEffect, useInsertionEffect, useState } from 'react';
+import { NavLink, useNavigate } from "react-router-dom"
 import "./styles/menu.css"
 import Cookies from "js-cookie"
 import instagram from "../../assets/images/main/instagram.svg"
@@ -15,16 +15,20 @@ export default function Menu() {
   const [barOpen, setBarOpen] = useState(false)
   const [token, setToken] = useState(null)
   const [logOut, setLogOut] = useState(false)
+  const navigate = useNavigate()
   const barOpening = () => {
     setBarOpen(!barOpen)
   }
 
   const barLogOut = () => {
     setLogOut(!logOut)
+     
   }
 
 
-  useEffect(()=>{
+
+  useInsertionEffect(()=>{
+    
     const tokenFromCookie = Cookies.get('auth')
     if(tokenFromCookie){
       setToken(tokenFromCookie)
@@ -34,6 +38,11 @@ export default function Menu() {
     }
   }, [])
 
+  const logOutFunc = () => {
+    Cookies.remove('auth')
+    navigate('/login')
+    window.location.reload()
+  }
   return (
     <div className="menu">
       <div className='menu_container'>
@@ -75,7 +84,7 @@ export default function Menu() {
 
       {logOut && <div className='log_out'>
         <div className='log_out_container'>
-        <button className='form-control'>Log Out <img src={log_out_icon} className='log_out_icon'></img></button>
+        <button onClick={logOutFunc} className='form-control'>Log Out <img src={log_out_icon} className='log_out_icon'></img></button>
         </div>
         </div> }
     </div>
