@@ -1,5 +1,5 @@
 import React from 'react';
-import "./styles/home_forms.css"
+import "./styles/contact_forms.css"
 import Button from "../button/button.js"
 import clock_icon from "../../assets/images/home/clock_icon.svg"
 import location_icon from "../../assets/images/home/location_icon.svg"

@@ -4,7 +4,6 @@ import HomeClasses from "../../components/home/home_classes.js";
 import HomeMain from "../../components/home/home_main.js";
 import HomeAppointment from "../../components/home/home_appointment.js";
 import HomeReviews from "../../components/home/home_reviews.js";
-import HomeForms from "../../components/home/home_forms.js";
 export default function Home() {
   
     return (
@@ -13,7 +12,6 @@ export default function Home() {
      <HomeClasses/>
      <HomeAppointment/>
      <HomeReviews/>
-     <HomeForms/>
      </div>
     );
   }
