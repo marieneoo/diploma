@@ -11,9 +11,9 @@ export default function AboutMeetOurTeam() {
             <div className="about_meet_our_team_teachers">
                 <div className="about_meet_our_team_first_teacher">
                     <AboutOurTeamPictures pic="1"
-                        name="Մարիա Հարությունյան"
-                        bio="Ունենալով Հաթայի և գիտակցության պրակտիկաների փորձ՝ Մարիան հանգստացնող միջավայր է ստեղծում իր դասերին։"
-                        instagram_path="https://www.instagram.com/"
+                        name="Արփինե Հարությունյան"
+                        bio="Ունենալով Հաթայի և գիտակցության պրակտիկաների փորձ՝ Արփինեն հանգստացնող միջավայր է ստեղծում իր դասերին։"
+                        instagram_path="https://www.instagram.com/arpine.yoga?igsh=ejZuOHBtZWFveW16"
                         facebook_path="https://www.facebook.com/"
                         twitter_path="https://twitter.com/?lang=en"
                     />
@@ -21,9 +21,9 @@ export default function AboutMeetOurTeam() {
 
                 <div className="about_meet_our_team_second_teacher">
                 <AboutOurTeamPictures pic="2"
-                        name="Էմիլի Նազարյան"
-                        bio="Որպես Վինյասայի մասնագետ՝ Էմիլիի դասերը դինամիկ են՝ խրախուսելով ուսանողներին ուսումնասիրել իրենց ներքին ուժը:"
-                        instagram_path="https://www.instagram.com/"
+                        name="Նատալի Նազարյան"
+                        bio="Որպես Վինյասայի մասնագետ՝ Նատալիի դասերը դինամիկ են՝ խրախուսելով ուսանողներին ուսումնասիրել իրենց ներքին ուժը:"
+                        instagram_path="https://www.instagram.com/kulbak_natasha?igsh=d3R3bTByNm5lNXEx"
                         facebook_path="https://www.facebook.com/"
                         twitter_path="https://twitter.com/?lang=en"
                     />
@@ -32,9 +32,9 @@ export default function AboutMeetOurTeam() {
 
                 <div className="about_meet_our_team_third_teacher">
                 <AboutOurTeamPictures pic="3"
-                        name="Ադրիեն Սարգսյան"
-                        bio="Մասնագիտանալով Կունդալինի յոգայում՝ Լաուրան ուղղորդում է ուսանողներին հոգևոր ճամփորդության մեջ՝օգնելով նրանց բացահայտել սեփական անձը:"
-                        instagram_path="https://www.instagram.com/"
+                        name="Արփի Սարգսյան"
+                        bio="Մասնագիտանալով Կունդալինի յոգայում՝ Արփին ուղղորդում է ուսանողներին հոգևոր ճամփորդության մեջ՝օգնելով նրանց բացահայտել սեփական անձը:"
+                        instagram_path="https://www.instagram.com/arpi_yoga?igsh=MzEyOGJxYnk3bGlo"
                         facebook_path="https://www.facebook.com/"
                         twitter_path="https://twitter.com/?lang=en"
                     />

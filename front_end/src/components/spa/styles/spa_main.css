@@ -1,0 +1,73 @@
+.spa_main {
+    padding-top: 77px;
+    background-color: #F9C349;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spa_main p {
+    margin-bottom: 0 !important;
+}
+
+.spa_main_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.spa_main_container_txt {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spa_main_container_txt p {
+    color: white;
+    padding: 4%;
+
+}
+
+.spa_main_container_pics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spa_main_container_pics img {
+    width: 80%;
+    padding: 4%;
+}
+
+.spa_main_container_price_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 2%;  background-color: black;
+}
+
+.spa_main_container_price_list_txt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2px; 
+   background-image: url("../../../assets/images/spa/spa_background.jpg");
+    background-size: cover;
+    background-position: start;
+    background-repeat: no-repeat;
+   
+    
+    
+}
+
+.spa_main_container_price_list_txt p {
+    text-align: center;
+    text-justify: center;
+}

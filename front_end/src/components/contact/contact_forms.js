@@ -17,7 +17,7 @@ export default function HomeForms() {
     //     setUser({ ...user, [name]: value })
     // } 
     return (
-        <div className="home_forms">
+        <div className="home_forms" id='form'>
             <div className="home_make_an_appointment">
                 <h4>ԻՆՉԻ՞Ն ԵՔ ՍՊԱՍՈՒՄ...</h4>
                 <h1>Ամրագրեք Այց</h1>
