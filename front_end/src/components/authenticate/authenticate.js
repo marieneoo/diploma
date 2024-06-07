@@ -64,8 +64,8 @@ function FormSignIn() {
 
 function FormSignUp() {
     const navigate = useNavigate()
-    const [passError, setPassError] = useState(false)
-    const [matchPass, setMatchPass] = useState(false)
+    const [passError, setPassError] = useState(false) //8 nishic cacr
+    const [matchPass, setMatchPass] = useState(false) //passery chen hamynknum
     const [user, setUser] = useState({
         name: '',
         mail: '',
@@ -74,18 +74,32 @@ function FormSignUp() {
     })
     const handleInput = (event) => {
         const { password, check_password } = user;
-        console.log(password.length)
-        console.log(check_password == password)
-        if (password == null || password == 0 || check_password == password) {
-            setPassError(false)
-            setMatchPass(true)
-        } else if (password.length >= 8 || check_password == password) {
-            setPassError(false)
-            setMatchPass(false)
-        } else {
-            setPassError(true)
-
+       let sum = 0
+if ( check_password == password) {
+            setMatchPass(false) 
+            console.log(`${check_password} և ${password}`)
+            console.log(` ${check_password == password}, ${matchPass} `)
+            sum = sum + 1
+            console.log(`mtav if & ${sum}`)
         }
+        if(check_password != password) {
+            setMatchPass(true)
+            console.log(`${check_password} և ${password}`)
+            console.log(` ${check_password == password}, ${matchPass} `)
+            console.log("mtav else if")
+        }
+        
+        if (password == null || password == 0 || password.length + 1 < 8 ) {
+            setPassError(true)  
+            console.log(`${password.length + 1}, ${passError}`)
+            
+        } else{
+            setPassError(false)
+            console.log(`${password.length + 1}, ${passError}`)
+           
+        }
+
+       
         let name = event.target.name
         let value = event.target.value
         setUser({ ...user, [name]: value })
@@ -93,8 +107,8 @@ function FormSignUp() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         const { name, mail, password, check_password } = user;
-        if (password === check_password && password.length <= 8) {
-            setPassError(false)
+        if (password === check_password && password.length >= 8) {
+            
             try {
                 const res = await fetch('/register', {
                     method: "POST",
