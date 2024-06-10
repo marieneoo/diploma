@@ -57,7 +57,10 @@ app.post('/login', async (req, res) =>{
                     express: new Date(Date.now()+86400000),
                     httpOnly: true 
                 })
+                console.log(user.name, user.mail)
                 res.cookie('auth', token)
+                res.cookie('auth_name', user.name)
+                res.cookie('auth_mail', user.mail)
                 res.status(200).send("LoggedIn")
                 
             }else{
