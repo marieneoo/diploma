@@ -72,38 +72,36 @@ function FormSignUp() {
         password: '',
         check_password: ''
     })
+    
     const handleInput = (event) => {
-        const { password, check_password } = user;
-       let sum = 0
-if ( check_password == password) {
-            setMatchPass(false) 
-            console.log(`${check_password} և ${password}`)
-            console.log(` ${check_password == password}, ${matchPass} `)
-            sum = sum + 1
-            console.log(`mtav if & ${sum}`)
-        }
-        if(check_password != password) {
-            setMatchPass(true)
-            console.log(`${check_password} և ${password}`)
-            console.log(` ${check_password == password}, ${matchPass} `)
-            console.log("mtav else if")
-        }
-        
-        if (password == null || password == 0 || password.length + 1 < 8 ) {
-            setPassError(true)  
-            console.log(`${password.length + 1}, ${passError}`)
-            
-        } else{
-            setPassError(false)
-            console.log(`${password.length + 1}, ${passError}`)
-           
-        }
+        let name = event.target.name;
+        let value = event.target.value;
 
-       
-        let name = event.target.name
-        let value = event.target.value
-        setUser({ ...user, [name]: value })
-    }
+        // Update the user state
+        setUser({ ...user, [name]: value });
+
+        // Perform the validations
+        if (name === 'password' || name === 'check_password') {
+            // Use event.target.form to access the current values of the form fields
+            const form = event.target.form;
+            const password = form.password.value;
+            const check_password = form.check_password.value;
+
+            // Password match validation
+            if (check_password !== '' && password !== check_password) {
+                setMatchPass(true);
+            } else {
+                setMatchPass(false);
+            }
+
+            // Password length validation
+            if (password.length < 8) {
+                setPassError(true);
+            } else {
+                setPassError(false);
+            }
+        }
+    };
     const handleSubmit = async (event) => {
         event.preventDefault();
         const { name, mail, password, check_password } = user;
