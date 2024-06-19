@@ -17,20 +17,20 @@ import './App.css';
 
 function App() {
  const [token, setToken] = useState(false)
-  const [display, setDisplay] = useState(true)
+  const [display, setDisplay] = useState(false)
  useInsertionEffect(() => {
   console.log(token)
   let cookieToken = Cookies.get('auth')
+    if (window.location.pathname === "/login" || window.location.pathname === "/register" || window.location.pathname === "/forgot_password" || window.location.pathname === "/error" || window.location.pathname === "/") {
+      setDisplay(false)
+    } else {
+      setDisplay(true)
+    }
   if(cookieToken){
     setToken(true)
   }else{
     setToken(false)
   }
-    if (window.location.pathname == "/login" || window.location.pathname == "/register" || window.location.pathname == "/forgot_password" || window.location.pathname == "/error") {
-      setDisplay(false)
-    } else {
-      setDisplay(true)
-    }
   }, [window.location.pathname])
   console.log(display)
 
