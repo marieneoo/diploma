@@ -10,14 +10,23 @@ import Footer from './components/footer/footer.js';
 import SignIn from './pages/authenticate/sign_in.js';
 import SignUp from './pages/authenticate/sign_up.js';
 import ForgPass from './pages/authenticate/forg_pass.js';
+import ErrorPage from './pages/error/error.js';
+import Cookies from "js-cookie"
 import './App.css';
 
 
 function App() {
- 
+ const [token, setToken] = useState(false)
   const [display, setDisplay] = useState(true)
  useInsertionEffect(() => {
-    if (window.location.pathname == "/login" || window.location.pathname == "/register" || window.location.pathname == "/forgot_password") {
+  console.log(token)
+  let cookieToken = Cookies.get('auth')
+  if(cookieToken){
+    setToken(true)
+  }else{
+    setToken(false)
+  }
+    if (window.location.pathname == "/login" || window.location.pathname == "/register" || window.location.pathname == "/forgot_password" || window.location.pathname == "/error") {
       setDisplay(false)
     } else {
       setDisplay(true)
@@ -31,17 +40,18 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {display && <Menu />}
+        {display &&  <Menu />}
         <Routes>
-          <Route index element={<Home />}></Route>
-          <Route path="/home" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/classes" element={<Classes />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/spa" element={<Spa />}></Route>
+          <Route index element={<SignIn />}></Route>
+          <Route path="/home" element={token ? <Home /> : <ErrorPage/>}></Route>
+          <Route path="/about" element={token ? <About />: <ErrorPage/>}></Route>
+          <Route path="/classes" element={token ? <Classes />: <ErrorPage/>}></Route>
+          <Route path="/contact" element={token ? <Contact />: <ErrorPage/>}></Route>
+          <Route path="/spa" element={token ? <Spa />: <ErrorPage/>}></Route>
           <Route path="/login" element={<SignIn />}></Route>
           <Route path="/register" element={<SignUp />}></Route>
           <Route path="/forgot_password" element={<ForgPass />}></Route>
+         <Route path="/error" element={<ErrorPage />}></Route>
         </Routes>
         {display && <Footer />}
       </Router>
