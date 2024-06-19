@@ -85,6 +85,10 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 0.8fr 0.2fr;
+        
+    }
+    .home_classes p{
+        font-size: calc(0.5rem + 1vw);
     }
 
     .first_class_txt,
@@ -134,16 +138,13 @@
         justify-self: center;
         align-self: center;
     }
-
+    
     .first_class_txt p,
     .second_class_txt p,
     .third_class_txt p {
         width: 100%;
     }
 
-    p {
-        font-size: calc(0.5rem + 1vw);
-    }
 }
 
 @media only screen and (max-width:400px) {

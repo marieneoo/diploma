@@ -46,8 +46,8 @@
 #home_main_button {
     background-color: white;
     color: black;
-    justify-self: start;
-    align-self: start;
+    justify-self: center;
+    align-self: center;
 }
 
 #home_main_button:hover {

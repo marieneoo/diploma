@@ -17,7 +17,7 @@ import './App.css';
 
 function App() {
  const [token, setToken] = useState(false)
-  const [display, setDisplay] = useState(true)
+  const [display, setDisplay] = useState(false)
  useInsertionEffect(() => {
   console.log(token)
   let cookieToken = Cookies.get('auth')
@@ -26,7 +26,7 @@ function App() {
   }else{
     setToken(false)
   }
-    if (window.location.pathname == "/login" || window.location.pathname == "/register" || window.location.pathname == "/forgot_password" || window.location.pathname == "/error") {
+    if (window.location.pathname === "/login" || window.location.pathname === "/register" || window.location.pathname === "/forgot_password" || window.location.pathname === "/error") {
       setDisplay(false)
     } else {
       setDisplay(true)
