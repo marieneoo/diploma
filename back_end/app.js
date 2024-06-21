@@ -92,6 +92,26 @@ app.post('/forgot_password', async (req, res) =>{
         }
 })
 
+app.post('/change_password', async (req, res) =>{
+    try {
+        
+        const mail=req.body.mail
+        const password=req.body.password
+
+        const user=await Users.findOne({mail:mail})
+        if(user) {
+            user.password = password; // Update the password
+            await user.save();
+            res.status(200).send("password is updated")}
+           
+            else{
+                res.status(400).send("mail not found")
+            }
+        }catch{
+            res.status(400).send("something went wrong")
+        }
+})
+
 app.listen(port, ()=>{
 
     console.log("server is listening")

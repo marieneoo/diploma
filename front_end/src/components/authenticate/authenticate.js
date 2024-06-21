@@ -232,6 +232,7 @@ function FormChangePass() {
     const [user, setUser] = useState({
        password:""
     })
+  
     
     const handleInput = (event) => {
         let name = event.target.name
@@ -262,25 +263,25 @@ function FormChangePass() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const {mail } = user
+       
+        const {password, mail} = user
+        user.mail = Cookies.get('auth_mail')
         try {
-            const res = await fetch('/forgot_password', {
+            const res = await fetch('/change_password', {
                 method: 'POST',
                 headers: { 'Content-type': 'application/json' },
-                body: JSON.stringify({ mail})
+                body: JSON.stringify({ password, mail})
             })
-
+            console.log(password, mail)
             if (res.status == 400 || !res) {
-                console.log("incorrect detals")
+                console.log("mail not found")
                 setShowError(true)
-                console.log(showError)
             }
 
             else {
                 navigate('/login')
-                console.log('namaky uxarkvec')
-                setShowError(false)
-                console.log(showError)
+                console.log('pass is updated')
+                
             }
 
         }
@@ -299,7 +300,7 @@ function FormChangePass() {
                     <Input name='check_password' value={user.check_password} onChange={handleInput} type="password" txt="Կրկնել գաղտնաբառը" />
                     {matchPass && <p>Գաղտնաբառերը չեն համընկնում</p>}
                     <button type="submit" className="btn btn-secondary btn-sm">Փոխել գաղտնաբառը</button>
-                    {showError && <p>Չկա նման էլ․ հասցե</p>}
+
                     </form>
             </div>
         </div>
