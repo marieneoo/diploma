@@ -152,6 +152,7 @@ function FormSignUp() {
 
 function FormForgPass() {
     const navigate = useNavigate()
+    const[showError, setShowError] = useState(false)
     const [user, setUser] = useState({
         mail: ''
     })
@@ -173,12 +174,16 @@ function FormForgPass() {
             })
 
             if (res.status == 400 || !res) {
-                console.log('incorrect details')
+                console.log("incorrect detals")
+                setShowError(true)
+                console.log(showError)
             }
 
             else {
                 navigate('/login')
                 console.log('namaky uxarkvec')
+                setShowError(false)
+                console.log(showError)
             }
 
         }
@@ -194,6 +199,7 @@ function FormForgPass() {
                     <h3>Մոռացե՞լ եք Ձեր գաղտնաբառը</h3>
                     <Input name='mail' value={user.mail} onChange={handleChange} type="email" txt="Էլ․հասցե" />
                     <button type="submit" className="btn btn-secondary btn-sm">Ուղարկել Նամակ</button>
+                    {showError && <p>Չկա նման էլ․ հասցե</p>}
                     </form>
             </div>
         </div>

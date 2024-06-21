@@ -74,6 +74,22 @@ app.post('/login', async (req, res) =>{
     }
 })
 
+app.post('/forgot_password', async (req, res) =>{
+    try {
+
+        const mail=req.body.mail
+
+        const user=await Users.findOne({mail:mail})
+        if(user) {
+            res.status(200).send("finded the same mail on the db")}
+            else{
+                res.status(400).send("mail noot found")
+            }
+        }catch{
+            res.status(400).send("something went wrong")
+        }
+})
+
 app.listen(port, ()=>{
 
     console.log("server is listening")
