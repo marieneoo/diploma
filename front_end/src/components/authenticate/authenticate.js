@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { NavLink, useNavigate } from "react-router-dom"
 import Cookies from "js-cookie"
 import Input from './input.js'
+import emailjs from 'emailjs-com';
 
 
 function FormSignIn() {
@@ -153,10 +154,16 @@ function FormSignUp() {
 
 function FormForgPass() {
     const navigate = useNavigate()
+    const emailRef = useRef();
+    const [loading, setLoading] = useState(false);
     const[showError, setShowError] = useState(false)
     const [user, setUser] = useState({
         mail: ''
     })
+
+    useEffect(() => {
+        emailjs.init("2dOexOx6aOLAburUI");
+    }, []);
     
     const handleChange = (event) => {
         let name = event.target.name
@@ -166,6 +173,11 @@ function FormForgPass() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        const serviceId = "service_2c97jpa";
+        const templateId = "template_x72g39h";
+        const templateParams = {
+            recipient: emailRef.current.value
+        };
         const {mail } = user
         try {
             const res = await fetch('/forgot_password', {
@@ -177,19 +189,23 @@ function FormForgPass() {
             if (res.status == 400 || !res) {
                 console.log("incorrect detals")
                 setShowError(true)
-                console.log(showError)
             }
 
             else {
-                navigate('/login')
-                console.log('namaky uxarkvec')
+                navigate('/mail_page')
                 setShowError(false)
-                console.log(showError)
+                setLoading(true);
+                const response = await emailjs.send(serviceId, templateId, templateParams);
+                console.log('Email successfully sent:', response.status, response.text);
+            
+
             }
 
         }
         catch (error) {
             console.log(error)
+        }finally {
+            setLoading(false);
         }
 
     }
@@ -198,8 +214,8 @@ function FormForgPass() {
             <div className="form_container_forg_pass">
                 <form onSubmit={handleSubmit} method="POST" className="form">
                     <h3>Մոռացե՞լ եք Ձեր գաղտնաբառը</h3>
-                    <Input name='mail' value={user.mail} onChange={handleChange} type="email" txt="Էլ․հասցե" />
-                    <button type="submit" className="btn btn-secondary btn-sm">Ուղարկել Նամակ</button>
+                    <Input name='mail' value={user.mail} ref={emailRef} onChange={handleChange} type="email" txt="Էլ․հասցե" />
+                    <button type="submit" className="btn btn-secondary btn-sm">      {loading ? 'Ուղարկվում է...' : 'Ուղարկել նամակ'}</button>
                     {showError && <p>Չկա նման էլ․ հասցե</p>}
                     </form>
             </div>
