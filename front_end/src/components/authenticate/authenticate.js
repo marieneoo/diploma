@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from "react-router-dom"
+import Cookies from "js-cookie"
 import Input from './input.js'
 
 
@@ -206,5 +207,88 @@ function FormForgPass() {
     )
 }
 
+function FormChangePass() {
+    const navigate = useNavigate()
+    const userMail = Cookies.get("auth_mail")
+    const [passError, setPassError] = useState(false) //8 nishic cacr
+    const [matchPass, setMatchPass] = useState(false) //passery chen hamynknum
+    const[showError, setShowError] = useState(false)
+    const [user, setUser] = useState({
+       password:""
+    })
+    
+    const handleInput = (event) => {
+        let name = event.target.name
+        let value = event.target.value
+        setUser({ ...user, [name]: value })
+        // Perform the validations
+        if (name === 'password' || name === 'check_password') {
+            // Use event.target.form to access the current values of the form fields
+            const form = event.target.form;
+            const password = form.password.value;
+            const check_password = form.check_password.value;
 
-export { FormSignIn, FormSignUp, FormForgPass }
+            // Password match validation
+            if (check_password !== '' && password !== check_password) {
+                setMatchPass(true);
+            } else {
+                setMatchPass(false);
+            }
+
+            // Password length validation
+            if (password.length < 8) {
+                setPassError(true);
+            } else {
+                setPassError(false);
+            }
+        }
+    }
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        const {mail } = user
+        try {
+            const res = await fetch('/forgot_password', {
+                method: 'POST',
+                headers: { 'Content-type': 'application/json' },
+                body: JSON.stringify({ mail})
+            })
+
+            if (res.status == 400 || !res) {
+                console.log("incorrect detals")
+                setShowError(true)
+                console.log(showError)
+            }
+
+            else {
+                navigate('/login')
+                console.log('namaky uxarkvec')
+                setShowError(false)
+                console.log(showError)
+            }
+
+        }
+        catch (error) {
+            console.log(error)
+        }
+
+    }
+    return (
+        <div className='authenticate_container'>
+            <div className="form_container_change_pass">
+                <form onSubmit={handleSubmit} method="POST" className="form">
+                    <h3>Գրեք նոր գաղտնաբառը</h3>
+                    <Input name='password' value={user.password} onChange={handleInput} type="password" txt="Գաղտնաբառ" />
+                    {passError && <p>8 նիշից ցածր ա</p>}
+                    <Input name='check_password' value={user.check_password} onChange={handleInput} type="password" txt="Կրկնել գաղտնաբառը" />
+                    {matchPass && <p>Գաղտնաբառերը չեն համընկնում</p>}
+                    <button type="submit" className="btn btn-secondary btn-sm">Ուղարկել Նամակ</button>
+                    {showError && <p>Չկա նման էլ․ հասցե</p>}
+                    </form>
+            </div>
+        </div>
+    )
+}
+
+
+export { FormSignIn, FormSignUp, FormForgPass, FormChangePass }

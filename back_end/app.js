@@ -81,7 +81,9 @@ app.post('/forgot_password', async (req, res) =>{
 
         const user=await Users.findOne({mail:mail})
         if(user) {
+            res.cookie('auth_mail', mail)
             res.status(200).send("finded the same mail on the db")}
+           
             else{
                 res.status(400).send("mail noot found")
             }
