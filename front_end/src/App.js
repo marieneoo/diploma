@@ -13,6 +13,7 @@ import ForgPass from './pages/authenticate/forg_pass.js';
 import ErrorPage from './pages/error/error.js';
 import Cookies from "js-cookie"
 import ChangePass from './pages/authenticate/change_pass.js';
+import MailPage from './pages/mail/mail.js';
 import './App.css';
 
 
@@ -22,7 +23,7 @@ function App() {
  useInsertionEffect(() => {
   console.log(token)
   let cookieToken = Cookies.get('auth')
-    if (window.location.pathname === "/login" || window.location.pathname === "/register" || window.location.pathname === "/forgot_password" || window.location.pathname === "/error" || window.location.pathname === "/" || window.location.pathname === "/change_pass") {
+    if (window.location.pathname === "/login" || window.location.pathname === "/register" || window.location.pathname === "/forgot_password" || window.location.pathname === "/error" || window.location.pathname === "/" || window.location.pathname === "/change_pass" || window.location.pathname === "/mail_page") {
       setDisplay(false)
     } else {
       setDisplay(true)
@@ -54,6 +55,7 @@ function App() {
           <Route path="/forgot_password" element={<ForgPass />}></Route>
          <Route path="/error" element={<ErrorPage />}></Route>
          <Route path="/change_pass" element={<ChangePass />}></Route>
+         <Route path="/mail_page" element={<MailPage />}></Route>
         </Routes>
         {display && <Footer />}
       </Router>

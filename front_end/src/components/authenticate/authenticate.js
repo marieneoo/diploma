@@ -282,7 +282,7 @@ function FormChangePass() {
                     {passError && <p>8 նիշից ցածր ա</p>}
                     <Input name='check_password' value={user.check_password} onChange={handleInput} type="password" txt="Կրկնել գաղտնաբառը" />
                     {matchPass && <p>Գաղտնաբառերը չեն համընկնում</p>}
-                    <button type="submit" className="btn btn-secondary btn-sm">Ուղարկել Նամակ</button>
+                    <button type="submit" className="btn btn-secondary btn-sm">Փոխել գաղտնաբառը</button>
                     {showError && <p>Չկա նման էլ․ հասցե</p>}
                     </form>
             </div>
