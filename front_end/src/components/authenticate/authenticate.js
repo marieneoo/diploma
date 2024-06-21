@@ -176,6 +176,7 @@ function FormForgPass() {
         const serviceId = "service_2c97jpa";
         const templateId = "template_x72g39h";
         const templateParams = {
+            name:  Cookies.get("auth_name"),
             recipient: emailRef.current.value
         };
         const {mail } = user
