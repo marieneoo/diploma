@@ -58,8 +58,8 @@ export default function Menu() {
 
         </div>
         <div className="main">
-          <img className="instagram_img" src={instagram}></img>
-          <img className="facebook_img" src={facebook}></img>
+          <a target='blank' href='https://www.instagram.com/zenyoga.yvn/'><img className="instagram_img" src={instagram}></img></a>
+          <a target='blank' href='https://www.facebook.com/profile.php?id=61561104338630'><img className="facebook_img" src={facebook}></img></a>
 
           {!token && <Button id="menu_button" txt="ԳՐԱՆՑՎԵԼ ՀԻՄԱ" path="/contact" img="null" />}
           {token && <img onClick={barLogOut} className='user_icon' src={user_icon}></img>}

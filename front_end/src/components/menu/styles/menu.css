@@ -59,6 +59,9 @@
     height: calc(10px + 1vw);
     margin-right: 3%;
 }
+.main img, .main a{
+    margin: 3%;
+}
 
 
 #menu_button {

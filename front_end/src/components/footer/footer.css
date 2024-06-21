@@ -63,9 +63,8 @@
 }
 
 .facebook_pic,
-.instagram_pic,
-.twitter_pic {
-    width: 40px;
+.instagram_pic{
+    width: 30px;
     height: 40px;
     padding: 7%;
 }
@@ -80,7 +79,7 @@
 .footer_down_copyright {
     color: white;
     padding-left: 3%;
-    font-size: calc(0.7rem + 0.8vw);
+    font-size: calc(0.7rem + 0.7vw);
 }
 
 .footer_down_icons {

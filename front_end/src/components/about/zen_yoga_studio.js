@@ -2,7 +2,7 @@ import React from 'react';
 import "./styles/zen_yoga_studio.css"
 import commas_pic from "../../assets/images/home/commas.png"
 import username_pic from "../../assets/images/home/home_username_pic.jpg"
-import yoga_retreat from "../../assets/images/about/yoga_retreat.jpg"
+import AboutCarousel from './carousel.tsx';
 export default function ZenYogaStudio() {
     return (
         <div className="zen_yoga_studio">
@@ -23,7 +23,7 @@ export default function ZenYogaStudio() {
             </div>
 
             <div className="zen_yoga_studio_slider">
-                <img src={yoga_retreat} className="yoga_retreat_pic"></img>
+                <AboutCarousel/>
 
             </div>
 

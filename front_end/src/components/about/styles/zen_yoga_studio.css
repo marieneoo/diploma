@@ -17,7 +17,6 @@
     color: #ffb100;
     font-size: calc(0.5rem + 0.3vw);
     letter-spacing: 5px;
-    
 }
 
 .zen_yoga_studio_relax h2 {
@@ -68,14 +67,29 @@
 }
 
 .zen_yoga_studio_slider {
-    padding: 13%;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: auto;
+}
+
+.carousel_about {
+    width: 100%;
+    height: auto;
+}
+
+.carousel_about div {
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.yoga_retreat_pic {
-    height: 70%;
+.carousel_about img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 550px;
 }
 
 .zen_yoga_studio_paragraph p {
@@ -87,48 +101,36 @@
 
 .zen_yoga_studio_paragraph p:first-child {
     padding-bottom: 0;
-
-
 }
 
-.zen_yoga_studio_paragraph p:nth-child(2){
+.zen_yoga_studio_paragraph p:nth-child(2) {
     padding-top: 5%;
 }
 
-
 @media only screen and (max-width: 1200px) {
     .zen_yoga_studio {
-        grid-template-columns: repeat(2, 0.5fr);
-        grid-template-rows: 0.5fr 0.2fr;
-        height: calc(110vh + 15vw);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        height: auto;
     }
 
-    .zen_yoga_studio_relax{
+    .zen_yoga_studio_relax {
         padding-left: 5%;
     }
 
-    .yoga_retreat_pic{
-        height: 90%;
-    }
-
     .zen_yoga_studio_paragraph {
-        display: grid;
-        grid-area: 2/1/2/3;
+        grid-column: span 2;
         padding: 0;
     }
 
-    .zen_yoga_studio_paragraph p{
+    .zen_yoga_studio_paragraph p {
         padding: 0;
         width: 100%;
         font-size: calc(1rem + 0.5vw);
     }
 
-    .yoga_retreat_pic, .zen_yoga_studio_paragraph p {
-        padding: 0;
-    }
-
-    .zen_yoga_studio_paragraph p:nth-child(2), .zen_yoga_studio_paragraph p:first-child {
-        padding-top: 0;
+    .zen_yoga_studio_paragraph p:nth-child(2),
+    .zen_yoga_studio_paragraph p:first-child {
         padding-left: 3%;
         font-size: calc(0.5rem + 0.9vw);
     }
@@ -137,26 +139,18 @@
         padding-top: 5%;
     }
 
-    .commas_pic{
-        padding-top: 0;
-    }
-    
     .zen_yoga_studio_slider {
-        align-items: start;
         width: 80%;
-        height: calc(50vh + 20vw);
-        display: flex;
-       justify-content: center;
-       align-items: center;
-    }
-    .zen_yoga_studio_relax h6{
-        margin-left: 1%;
+        height: auto;
+        margin: auto;
     }
 
-    .zen_yoga_studio_paragraph p {
-        font-size: calc(1rem + 0.5vw);
-        line-height: normal;
-        width: 90%;
+    .carousel_about {
+        width: 100%;
+    }
+
+    .carousel_about img {
+        width: 100%;
     }
 }
 
@@ -166,39 +160,52 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: calc(190vh + 10vw);
-    }   
+        height: auto;
+    }
 
-    .zen_yoga_studio_slider, .zen_yoga_studio_relax, .zen_yoga_studio_relax h6 , .zen_yoga_studio_relax h2, .commas_pic{
+    .zen_yoga_studio_relax,
+    .zen_yoga_studio_relax h6,
+    .zen_yoga_studio_relax h2,
+    .commas_pic {
         padding: 0;
         display: flex;
         justify-content: start;
         align-items: center;
-
     }
-    .zen_yoga_studio_relax, .zen_yoga_studio_slider, .zen_yoga_studio_paragraph{
+
+    .zen_yoga_studio_slider {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: auto;
+    }
+
+    .carousel_about img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .zen_yoga_studio_relax,
+    .zen_yoga_studio_paragraph {
         width: 90%;
-        height: 55vh;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: start;
         flex-direction: column;
     }
 
-    .yoga_retreat_pic {
-        height: calc(150px + 30vw);
-        width: calc(50px + 30vw);
-    } 
-    .zen_yoga_studio_relax_profile_txt, .zen_yoga_studio_relax_profile{
+    .zen_yoga_studio_relax_profile_txt,
+    .zen_yoga_studio_relax_profile {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    
-    .zen_yoga_studio_relax_profile_txt p:first-child{
+
+    .zen_yoga_studio_relax_profile_txt p:first-child {
         text-align: center;
         margin-bottom: 0;
     }
-    
 }

@@ -50,10 +50,8 @@ export default function Footer() {
                 </div>
 
                 <div className="footer_down_icons">
-                    <img src={instagram_pic} className="instagram_pic"></img>
-                    <img src={facebook_pic} className="facebook_pic"></img>
-                    <img src={twitter_pic} className="twitter_pic"></img>
-
+                    <a target='blank' href='https://www.instagram.com/zenyoga.yvn/'><img src={instagram_pic} className="instagram_pic"></img></a>
+                    <a target='blank' href='https://www.facebook.com/profile.php?id=61561104338630'><img src={facebook_pic} className="facebook_pic"></img></a>
                 </div>
 
             </div>
