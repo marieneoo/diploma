@@ -18,44 +18,44 @@ import './App.css';
 
 
 function App() {
- const [token, setToken] = useState(false)
+  const [token, setToken] = useState(false)
   const [display, setDisplay] = useState(false)
- useInsertionEffect(() => {
-  console.log(token)
-  let cookieToken = Cookies.get('auth')
+  useInsertionEffect(() => {
+    console.log(token)
+    let cookieToken = Cookies.get('auth')
     if (window.location.pathname === "/login" || window.location.pathname === "/register" || window.location.pathname === "/forgot_password" || window.location.pathname === "/error" || window.location.pathname === "/" || window.location.pathname === "/change_pass" || window.location.pathname === "/mail_page") {
       setDisplay(false)
     } else {
       setDisplay(true)
     }
-  if(cookieToken){
-    setToken(true)
-  }else{
-    setToken(false)
-  }
+    if (cookieToken) {
+      setToken(true)
+    } else {
+      setToken(false)
+    }
   }, [window.location.pathname])
   console.log(display)
 
 
-  
+
 
   return (
     <div className="App">
       <Router>
-        {display &&  <Menu />}
+        {display && <Menu />}
         <Routes>
           <Route index element={<SignIn />}></Route>
-          <Route path="/home" element={token ? <Home /> : <ErrorPage/>}></Route>
-          <Route path="/about" element={token ? <About />: <ErrorPage/>}></Route>
-          <Route path="/classes" element={token ? <Classes />: <ErrorPage/>}></Route>
-          <Route path="/contact" element={token ? <Contact />: <ErrorPage/>}></Route>
-          <Route path="/spa" element={token ? <Spa />: <ErrorPage/>}></Route>
+          <Route path="/home" element={token ? <Home /> : <ErrorPage />}></Route>
+          <Route path="/about" element={token ? <About /> : <ErrorPage />}></Route>
+          <Route path="/classes" element={token ? <Classes /> : <ErrorPage />}></Route>
+          <Route path="/contact" element={token ? <Contact /> : <ErrorPage />}></Route>
+          <Route path="/spa" element={token ? <Spa /> : <ErrorPage />}></Route>
           <Route path="/login" element={<SignIn />}></Route>
           <Route path="/register" element={<SignUp />}></Route>
           <Route path="/forgot_password" element={<ForgPass />}></Route>
-         <Route path="/error" element={<ErrorPage />}></Route>
-         <Route path="/change_pass" element={<ChangePass />}></Route>
-         <Route path="/mail_page" element={<MailPage />}></Route>
+          <Route path="/error" element={<ErrorPage />}></Route>
+          <Route path="/change_pass" element={<ChangePass />}></Route>
+          <Route path="/mail_page" element={<MailPage />}></Route>
         </Routes>
         {display && <Footer />}
       </Router>

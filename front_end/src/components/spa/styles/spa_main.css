@@ -1,6 +1,8 @@
 .spa_main {
     padding-top: 77px;
     background-color: #F9C349;
+    background-image: url("../../../assets/images/classes/Pattern.svg");
+    background-position: 0 120px !important;
     display: flex;
     justify-content: center;
     align-items: center;

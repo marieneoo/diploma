@@ -22,18 +22,18 @@ export default function Menu() {
 
   const barLogOut = () => {
     setLogOut(!logOut)
-     
+
   }
 
 
 
-  useInsertionEffect(()=>{
-    
+  useInsertionEffect(() => {
+
     const tokenFromCookie = Cookies.get('auth')
-    if(tokenFromCookie){
+    if (tokenFromCookie) {
       setToken(tokenFromCookie)
       console.log(token)
-    }else{
+    } else {
       console.log("token chka")
     }
   }, [])
@@ -84,9 +84,9 @@ export default function Menu() {
 
       {logOut && <div className='log_out'>
         <div className='log_out_container'>
-        <button onClick={logOutFunc} className='form-control'>Log Out <img src={log_out_icon} className='log_out_icon'></img></button>
+          <button onClick={logOutFunc} className='form-control'>Log Out <img src={log_out_icon} className='log_out_icon'></img></button>
         </div>
-        </div> }
+      </div>}
     </div>
   );
 }

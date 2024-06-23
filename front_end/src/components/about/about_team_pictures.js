@@ -23,9 +23,9 @@ export default function AboutOurTeamPictures({ pic, name, bio, instagram_path, f
             <h4>{name}</h4>
             <p>{bio}</p>
             <div className="icons">
-                <a href={instagram_path}><img src={instagram_pic}></img></a>
-                <a href={facebook_path}><img src={facebook_pic}></img></a>
-                <a href={twitter_path}><img src={twitter_pic}></img></a>
+                <a target='blank' href={instagram_path}><img src={instagram_pic}></img></a>
+                <a target='blank' href={facebook_path}><img src={facebook_pic}></img></a>
+                <a target='blank' href={twitter_path}><img src={twitter_pic}></img></a>
             </div>
         </div>
 

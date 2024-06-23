@@ -3,10 +3,10 @@ import './authenticate.css'
 import { FormSignUp } from '../../components/authenticate/authenticate.js';
 import AuthenticatePic from '../../components/authenticate/pic.js';
 export default function SignUp() {
-    return(
+    return (
         <div className="authenticate">
-            <FormSignUp/>
-        <AuthenticatePic/>
+            <FormSignUp />
+            <AuthenticatePic />
         </div>
     )
 }

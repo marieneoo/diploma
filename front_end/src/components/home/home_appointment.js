@@ -8,7 +8,7 @@ export default function HomeAppointment() {
                 <h6>ԳՐԱՆՑՈՒՄ</h6>
                 <h1>Ցանկանում եք գրանցվել, կամ ունե՞ք հարցեր</h1>
                 <h4>Զանգահարե՜ք մեզ +37433344699, կամ ամրագրեք այց</h4>
-                <Button txt="ԱՄՐԱԳՐԵԼ ԱՅՑ" id="book_an_appointment_btn" path="/contact" color="white" />
+                <Button txt="ԲԱԺԱՆՈՐԴԱԳՐՎԵԼ ՀԻՄԱ" id="book_an_appointment_btn" path="/contact" color="white" />
             </div>
         </div>
     )
